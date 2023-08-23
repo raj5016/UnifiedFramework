@@ -1,0 +1,22 @@
+{
+  "applicationEndDate": "2019-12-17T16:58:03.209657+05:30[Asia/Kolkata]",
+  "currency": "USD",
+  "departmentId": "5675707536e74415ba58ad686b88d056",
+  "description": "SrResponsibilities ...",
+  "educationQualification": "BTech",
+  "educationQualificationType": "Vocational",
+  "employmentTypes": [
+    "Contract"
+  ],
+  "maxBudget": 200000.5,
+  "maxExperience": 5,
+  "minBudget": 50000.5,
+  "minExperience": 1,
+  "noOfVacancies": 3,
+  "payType": "Monthly",
+  "role": "Sr Eng",
+  "tagIds": [
+    "df489b0c7c4449eb9ff29ecd3bcf08a0"
+  ],
+  "title": "Senior Engg"
+}

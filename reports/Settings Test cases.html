@@ -1,0 +1,3321 @@
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset='utf-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+	
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+		<link href='https://cdn.rawgit.com/anshooarora/extentreports-java/b4a58fcfd1e137bd9287244035a7c80d3d73b3af/dist/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title>ExtentReports</title>
+
+	<style type='text/css'>
+	</style>
+</head>
+
+	<body class='extent standard default hide-overflow '>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo blue darken-3">Extent</a>
+
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+				<li class='waves-effect'><a href='#!' view='author-view' onclick="configureView(3)"><i class='material-icons'>person</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+		</ul>
+
+		<!-- report name -->
+		<span class='report-name'>ExtentReports</span>
+		
+		<!-- report headline -->
+		<span class='report-headline'></span>
+
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<li>
+                <a href='#!'>
+                    <span class='label suite-start-time blue darken-3'>Apr 16, 2020 07:56:07 AM</span>
+				</a>
+			</li>
+			<li>
+                <a href='#!'>
+                    <span class='label blue darken-3'>3.1.3</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+		<!-- container -->
+		<div class='container'>
+
+<div id='test-view' class='view'>
+				
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+
+			<!-- category toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>local_offer</i> Category
+				</a>
+				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>Smoke</a></li>
+					<li class='divider'></li>
+					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
+				</ul>
+			</div>
+			<!-- category toggle -->
+
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+					<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+					<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+
+<div id='test-view-charts' class='subview-full'>
+	<div id='charts-row' class='row nm-v nm-h'>
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Tests</div>
+				<div class='chart-box'>
+					<canvas id='parent-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='66.667%'><span class='strong'>22</span> test(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='33.333%'>11</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+		
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Steps</div>
+				<div class='chart-box'>
+					<canvas id='child-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='96.238%'><span class='strong'>307</span> step(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='3.762%'>12</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Tests</h5>
+			<ul id='test-collection' class='test-collection'>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>Setting</span>
+						<span class='test-time'>Apr 16, 2020 07:56:08 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Apr 16, 2020 07:56:08 AM</span>
+	<span class='label end-time'>Apr 16, 2020 07:57:42 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 34s+681ms</span>
+</div>
+	<div class='test-desc'>Testing the Email Template(add,edit,delete)Functionality </div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='2'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC001_verify_user_is_able_to_add_NewEmailTemplate_under_setting_page</h5>
+						<span class="node-time label grey lighten-1 white-text">Apr 16, 2020 07:56:39 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 19s+933ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>Smoke</span>
+								<span class='author label white-text'>Govind</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:56:20 AM</td>
+													<td class='step-details'>The Data :automation@mailinator.com entered Successfully in UserName field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:56:20 AM</td>
+													<td class='step-details'>The Data :automation entered Successfully in Domain field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:56:20 AM</td>
+													<td class='step-details'>The Data :Test@123 entered Successfully in PassWord field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:56:24 AM</td>
+													<td class='step-details'>The Element Login clicked</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:56:26 AM</td>
+													<td class='step-details'>Page title: Auzmor Hire matched successfully</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:56:29 AM</td>
+													<td class='step-details'>The Element Settings clicked in Setting</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:56:31 AM</td>
+													<td class='step-details'>The Element Templates clicked in Template Menu</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:56:35 AM</td>
+													<td class='step-details'>The Element Add Template clicked in Add New Template</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:56:36 AM</td>
+													<td class='step-details'>The Data :AutomationEmailTemplate entered Successfully in TemplateName field field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:56:36 AM</td>
+													<td class='step-details'>The Data :EmailSubject entered Successfully in EmailSubject field field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:56:37 AM</td>
+													<td class='step-details'>The Data :Hi Welcome ,To Hiring email post entered Successfully in EmailBody field field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:56:37 AM</td>
+													<td class='step-details'>The Element [CANDIDATE_FIRST_NAME] clicked in CANDIDATE_FIRST_NAME</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:56:37 AM</td>
+													<td class='step-details'>The Element [JOB_NAME] clicked in JOB_NAME</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:56:37 AM</td>
+													<td class='step-details'>The Element Save clicked in Save</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:56:39 AM</td>
+													<td class='step-details'>Email Template Added Successfully</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='3'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC002_verify_user_is_able_to_edit_the_EmailTemplate_added_under_setting_page</h5>
+						<span class="node-time label grey lighten-1 white-text">Apr 16, 2020 07:57:11 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 18s+398ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>Smoke</span>
+								<span class='author label white-text'>Govind</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:56:53 AM</td>
+													<td class='step-details'>The Data :automation@mailinator.com entered Successfully in UserName field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:56:53 AM</td>
+													<td class='step-details'>The Data :automation entered Successfully in Domain field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:56:54 AM</td>
+													<td class='step-details'>The Data :Test@123 entered Successfully in PassWord field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:56:58 AM</td>
+													<td class='step-details'>The Element Login clicked</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:57:00 AM</td>
+													<td class='step-details'>Page title: Auzmor Hire matched successfully</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:57:02 AM</td>
+													<td class='step-details'>The Element Settings clicked in Setting</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:57:04 AM</td>
+													<td class='step-details'>The Element Templates clicked in Template Menu</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:57:06 AM</td>
+													<td class='step-details'>The Email edit clicked Successfully</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:57:09 AM</td>
+													<td class='step-details'>The Data :EditEmailSubject entered Successfully in EmailSubject field field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:57:09 AM</td>
+													<td class='step-details'>The Element Save clicked in Save</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:57:11 AM</td>
+													<td class='step-details'>Email Template edited Successfully</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='4'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC003_verify_user_is_able_to_delete_the_EmailTemplate_which_is_added_under_setting_page</h5>
+						<span class="node-time label grey lighten-1 white-text">Apr 16, 2020 07:57:42 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 17s+807ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>Smoke</span>
+								<span class='author label white-text'>Govind</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:57:25 AM</td>
+													<td class='step-details'>The Data :automation@mailinator.com entered Successfully in UserName field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:57:25 AM</td>
+													<td class='step-details'>The Data :automation entered Successfully in Domain field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:57:25 AM</td>
+													<td class='step-details'>The Data :Test@123 entered Successfully in PassWord field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:57:29 AM</td>
+													<td class='step-details'>The Element Login clicked</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:57:31 AM</td>
+													<td class='step-details'>Page title: Auzmor Hire matched successfully</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:57:34 AM</td>
+													<td class='step-details'>The Element Settings clicked in Setting</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:57:36 AM</td>
+													<td class='step-details'>The Element Templates clicked in Template Menu</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:57:40 AM</td>
+													<td class='step-details'>Clicked On email Template deleted button</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:57:42 AM</td>
+													<td class='step-details'>Added Email Template deleted successfully</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:57:42 AM</td>
+													<td class='step-details'>Email Template deleted Successfully</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>Setting</span>
+						<span class='test-time'>Apr 16, 2020 07:57:44 AM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Apr 16, 2020 07:57:44 AM</span>
+	<span class='label end-time'>Apr 16, 2020 08:00:47 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 3m 3s+30ms</span>
+</div>
+	<div class='test-desc'>Testing the Job Template(add,edit,delete)Functionality </div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf fail' status='fail' test-id='6'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC001_verify_user_is_able_to_add_NewJobTemplate_under_setting_page</h5>
+						<span class="node-time label grey lighten-1 white-text">Apr 16, 2020 07:58:40 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 44s+468ms</span>
+						<span class='test-status right fail'>fail</span>
+								<span class='category label white-text'>Smoke</span>
+								<span class='author label white-text'>Govind</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:57:55 AM</td>
+													<td class='step-details'>The Data :automation@mailinator.com entered Successfully in UserName field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:57:56 AM</td>
+													<td class='step-details'>The Data :automation entered Successfully in Domain field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:57:56 AM</td>
+													<td class='step-details'>The Data :Test@123 entered Successfully in PassWord field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:58:00 AM</td>
+													<td class='step-details'>The Element Login clicked</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:58:02 AM</td>
+													<td class='step-details'>Page title: Auzmor Hire matched successfully</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:58:04 AM</td>
+													<td class='step-details'>The Element Settings clicked in Setting</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:58:06 AM</td>
+													<td class='step-details'>The Element Templates clicked in Template Menu</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:58:09 AM</td>
+													<td class='step-details'>The Element Job Templates clicked in JobTemplate Menu</td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>7:58:40 AM</td>
+													<td class='step-details'>Test Case Not executed Successfully</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf fail' status='fail' test-id='7'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC002_verify_user_is_able_to_edit_the_JobTemplate_which_is_added_under_setting_page</h5>
+						<span class="node-time label grey lighten-1 white-text">Apr 16, 2020 08:00:12 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 1m 17s+500ms</span>
+						<span class='test-status right fail'>fail</span>
+								<span class='category label white-text'>Smoke</span>
+								<span class='author label white-text'>Govind</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:58:55 AM</td>
+													<td class='step-details'>The Data :automation@mailinator.com entered Successfully in UserName field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:58:55 AM</td>
+													<td class='step-details'>The Data :automation entered Successfully in Domain field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:58:55 AM</td>
+													<td class='step-details'>The Data :Test@123 entered Successfully in PassWord field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:58:59 AM</td>
+													<td class='step-details'>The Element Login clicked</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:59:01 AM</td>
+													<td class='step-details'>Page title: Auzmor Hire matched successfully</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:59:03 AM</td>
+													<td class='step-details'>The Element Settings clicked in Setting</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:59:05 AM</td>
+													<td class='step-details'>The Element Templates clicked in Template Menu</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:59:08 AM</td>
+													<td class='step-details'>The Element Job Templates clicked in JobTemplate Menu</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:59:10 AM</td>
+													<td class='step-details'>The JobTemplate edit clicked Successfully</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:59:12 AM</td>
+													<td class='step-details'>The Data :Hi Welcome ,To Hiring Edit job post  entered Successfully in Job Description field field</td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>8:00:12 AM</td>
+													<td class='step-details'>Test Case Not executed Successfully</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='8'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC003_verify_user_is_able_to_delete_the_JobTemplate_which_is_added_under_setting_page</h5>
+						<span class="node-time label grey lighten-1 white-text">Apr 16, 2020 08:00:47 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 19s+235ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>Smoke</span>
+								<span class='author label white-text'>Govind</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:00:28 AM</td>
+													<td class='step-details'>The Data :automation@mailinator.com entered Successfully in UserName field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:00:28 AM</td>
+													<td class='step-details'>The Data :automation entered Successfully in Domain field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:00:29 AM</td>
+													<td class='step-details'>The Data :Test@123 entered Successfully in PassWord field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:00:33 AM</td>
+													<td class='step-details'>The Element Login clicked</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:00:35 AM</td>
+													<td class='step-details'>Page title: Auzmor Hire matched successfully</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:00:37 AM</td>
+													<td class='step-details'>The Element Settings clicked in Setting</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:00:40 AM</td>
+													<td class='step-details'>The Element Templates clicked in Template Menu</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:00:42 AM</td>
+													<td class='step-details'>The Element Job Templates clicked in JobTemplate Menu</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:00:45 AM</td>
+													<td class='step-details'>The JobTemplate delete clicked Successfully</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:00:47 AM</td>
+													<td class='step-details'>Added Email Template deleted successfully</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:00:47 AM</td>
+													<td class='step-details'>Job Template deleted Successfully</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='9'>
+					<div class='test-heading'>
+						<span class='test-name'>Setting</span>
+						<span class='test-time'>Apr 16, 2020 08:00:49 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Apr 16, 2020 08:00:49 AM</span>
+	<span class='label end-time'>Apr 16, 2020 08:03:36 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 2m 46s+710ms</span>
+</div>
+	<div class='test-desc'>Testing the CustomFields(add,delete)Functionality </div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='10'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC001_verify_user_is_able_to_add_customFields_by_selecting_shortanswer_as_yes_in_setting_page</h5>
+						<span class="node-time label grey lighten-1 white-text">Apr 16, 2020 08:01:18 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 14s+120ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>Smoke</span>
+								<span class='author label white-text'>Govind</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:01:05 AM</td>
+													<td class='step-details'>The Data :automation@mailinator.com entered Successfully in UserName field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:01:05 AM</td>
+													<td class='step-details'>The Data :automation entered Successfully in Domain field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:01:05 AM</td>
+													<td class='step-details'>The Data :Test@123 entered Successfully in PassWord field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:01:09 AM</td>
+													<td class='step-details'>The Element Login clicked</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:01:11 AM</td>
+													<td class='step-details'>Page title: Auzmor Hire matched successfully</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:01:14 AM</td>
+													<td class='step-details'>The Element Settings clicked in Setting</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:01:16 AM</td>
+													<td class='step-details'>The Element Custom Fields clicked in Custom Menu</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:01:16 AM</td>
+													<td class='step-details'>The Element + Add Custom Fields clicked in AddCustom</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:01:16 AM</td>
+													<td class='step-details'>The Data :NewJob entered Successfully in CustomeName field field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:01:17 AM</td>
+													<td class='step-details'>The Short Answer yes clicked Successfully</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:01:17 AM</td>
+													<td class='step-details'>The Element Add clicked in Add Button</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:01:18 AM</td>
+													<td class='step-details'>CustomFields added Successfully</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='11'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC002_verify_user_is_able_to_delete_the_added_customFields_of_the_shortanswer_as_yes_in_setting_page</h5>
+						<span class="node-time label grey lighten-1 white-text">Apr 16, 2020 08:01:44 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 12s+189ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>Smoke</span>
+								<span class='author label white-text'>Govind</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:01:32 AM</td>
+													<td class='step-details'>The Data :automation@mailinator.com entered Successfully in UserName field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:01:32 AM</td>
+													<td class='step-details'>The Data :automation entered Successfully in Domain field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:01:32 AM</td>
+													<td class='step-details'>The Data :Test@123 entered Successfully in PassWord field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:01:37 AM</td>
+													<td class='step-details'>The Element Login clicked</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:01:39 AM</td>
+													<td class='step-details'>Page title: Auzmor Hire matched successfully</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:01:41 AM</td>
+													<td class='step-details'>The Element Settings clicked in Setting</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:01:43 AM</td>
+													<td class='step-details'>The Element Custom Fields clicked in Custom Menu</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:01:44 AM</td>
+													<td class='step-details'>The Element Delete clicked in Confirm Delete</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:01:44 AM</td>
+													<td class='step-details'>CustomFields deleted Successfully</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='12'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC003_verify_user_is_able_to_add_customFields_by_selecting_shortanswer_as_no_in_setting_page</h5>
+						<span class="node-time label grey lighten-1 white-text">Apr 16, 2020 08:02:15 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 13s+490ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>Smoke</span>
+								<span class='author label white-text'>Govind</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:02:02 AM</td>
+													<td class='step-details'>The Data :automation@mailinator.com entered Successfully in UserName field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:02:02 AM</td>
+													<td class='step-details'>The Data :automation entered Successfully in Domain field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:02:02 AM</td>
+													<td class='step-details'>The Data :Test@123 entered Successfully in PassWord field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:02:06 AM</td>
+													<td class='step-details'>The Element Login clicked</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:02:08 AM</td>
+													<td class='step-details'>Page title: Auzmor Hire matched successfully</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:02:11 AM</td>
+													<td class='step-details'>The Element Settings clicked in Setting</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:02:13 AM</td>
+													<td class='step-details'>The Element Custom Fields clicked in Custom Menu</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:02:13 AM</td>
+													<td class='step-details'>The Element + Add Custom Fields clicked in AddCustom</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:02:13 AM</td>
+													<td class='step-details'>The Data :NewJob entered Successfully in CustomeName field field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:02:14 AM</td>
+													<td class='step-details'>The Short Answer No clicked Successfully</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:02:14 AM</td>
+													<td class='step-details'>The Element Add clicked in Add Button</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:02:15 AM</td>
+													<td class='step-details'>CustomFields added Successfully</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='13'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC004_verify_user_is_able_to_search_the_added_customFields_in_setting_page</h5>
+						<span class="node-time label grey lighten-1 white-text">Apr 16, 2020 08:02:43 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 11s+948ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>Smoke</span>
+								<span class='author label white-text'>Govind</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:02:31 AM</td>
+													<td class='step-details'>The Data :automation@mailinator.com entered Successfully in UserName field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:02:32 AM</td>
+													<td class='step-details'>The Data :automation entered Successfully in Domain field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:02:32 AM</td>
+													<td class='step-details'>The Data :Test@123 entered Successfully in PassWord field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:02:36 AM</td>
+													<td class='step-details'>The Element Login clicked</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:02:38 AM</td>
+													<td class='step-details'>Page title: Auzmor Hire matched successfully</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:02:40 AM</td>
+													<td class='step-details'>The Element Settings clicked in Setting</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:02:43 AM</td>
+													<td class='step-details'>The Element Custom Fields clicked in Custom Menu</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:02:43 AM</td>
+													<td class='step-details'>The Data :NewJob entered Successfully in CustomeName field field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:02:43 AM</td>
+													<td class='step-details'>CustomFields searched Successfully</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='14'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC005_verify_Application_throwing_proper_error_while_short_answer_is_not_checked_in_customFields</h5>
+						<span class="node-time label grey lighten-1 white-text">Apr 16, 2020 08:03:10 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 12s+967ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>Smoke</span>
+								<span class='author label white-text'>Govind</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:02:58 AM</td>
+													<td class='step-details'>The Data :automation@mailinator.com entered Successfully in UserName field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:02:58 AM</td>
+													<td class='step-details'>The Data :automation entered Successfully in Domain field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:02:58 AM</td>
+													<td class='step-details'>The Data :Test@123 entered Successfully in PassWord field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:03:02 AM</td>
+													<td class='step-details'>The Element Login clicked</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:03:04 AM</td>
+													<td class='step-details'>Page title: Auzmor Hire matched successfully</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:03:07 AM</td>
+													<td class='step-details'>The Element Settings clicked in Setting</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:03:09 AM</td>
+													<td class='step-details'>The Element Custom Fields clicked in Custom Menu</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:03:09 AM</td>
+													<td class='step-details'>The Element + Add Custom Fields clicked in AddCustom</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:03:09 AM</td>
+													<td class='step-details'>The Data :zTaew entered Successfully in CustomeName field field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:03:10 AM</td>
+													<td class='step-details'>The Element Add clicked in Add Button</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:03:10 AM</td>
+													<td class='step-details'>CustomFields added Successfully</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='15'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC006_verify_user_is_able_to_delete_the_added_customFields_of_the_shortanswer_as_no_in_setting_page</h5>
+						<span class="node-time label grey lighten-1 white-text">Apr 16, 2020 08:03:36 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 11s+325ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>Smoke</span>
+								<span class='author label white-text'>Govind</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:03:24 AM</td>
+													<td class='step-details'>The Data :automation@mailinator.com entered Successfully in UserName field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:03:25 AM</td>
+													<td class='step-details'>The Data :automation entered Successfully in Domain field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:03:25 AM</td>
+													<td class='step-details'>The Data :Test@123 entered Successfully in PassWord field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:03:29 AM</td>
+													<td class='step-details'>The Element Login clicked</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:03:31 AM</td>
+													<td class='step-details'>Page title: Auzmor Hire matched successfully</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:03:33 AM</td>
+													<td class='step-details'>The Element Settings clicked in Setting</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:03:35 AM</td>
+													<td class='step-details'>The Element Custom Fields clicked in Custom Menu</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:03:36 AM</td>
+													<td class='step-details'>The Element Delete clicked in Confirm Delete</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:03:36 AM</td>
+													<td class='step-details'>CustomFields deleted Successfully</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='16'>
+					<div class='test-heading'>
+						<span class='test-name'>Setting</span>
+						<span class='test-time'>Apr 16, 2020 08:03:37 AM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Apr 16, 2020 08:03:37 AM</span>
+	<span class='label end-time'>Apr 16, 2020 08:05:01 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 23s+769ms</span>
+</div>
+	<div class='test-desc'>Testing the Careers Page(add)Functionality </div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf fail' status='fail' test-id='17'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC001_verify_user_is_able_to_add_companyProfile_under_setting_page</h5>
+						<span class="node-time label grey lighten-1 white-text">Apr 16, 2020 08:05:01 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 1m 11s+715ms</span>
+						<span class='test-status right fail'>fail</span>
+								<span class='category label white-text'>Smoke</span>
+								<span class='author label white-text'>Govind</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:03:50 AM</td>
+													<td class='step-details'>The Data :automation@mailinator.com entered Successfully in UserName field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:03:50 AM</td>
+													<td class='step-details'>The Data :automation entered Successfully in Domain field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:03:50 AM</td>
+													<td class='step-details'>The Data :Test@123 entered Successfully in PassWord field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:03:55 AM</td>
+													<td class='step-details'>The Element Login clicked</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:03:57 AM</td>
+													<td class='step-details'>Page title: Auzmor Hire matched successfully</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:03:59 AM</td>
+													<td class='step-details'>The Element Settings clicked in Setting</td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>8:05:01 AM</td>
+													<td class='step-details'>Test Case Not executed Successfully</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='18'>
+					<div class='test-heading'>
+						<span class='test-name'>CompanySetting</span>
+						<span class='test-time'>Apr 16, 2020 08:05:03 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Apr 16, 2020 08:05:03 AM</span>
+	<span class='label end-time'>Apr 16, 2020 08:06:25 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 21s+633ms</span>
+</div>
+	<div class='test-desc'>Testing the functionality of SettingFeatures </div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='19'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC001_verify_user_is_able_to_add_staging_under_recruitingPreferences_in_setting_page</h5>
+						<span class="node-time label grey lighten-1 white-text">Apr 16, 2020 08:05:27 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 12s+498ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>Smoke</span>
+								<span class='author label white-text'>Govind</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:05:15 AM</td>
+													<td class='step-details'>The Data :automation@mailinator.com entered Successfully in UserName field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:05:15 AM</td>
+													<td class='step-details'>The Data :automation entered Successfully in Domain field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:05:15 AM</td>
+													<td class='step-details'>The Data :Test@123 entered Successfully in PassWord field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:05:19 AM</td>
+													<td class='step-details'>The Element Login clicked</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:05:21 AM</td>
+													<td class='step-details'>Page title: Auzmor Hire matched successfully</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:05:23 AM</td>
+													<td class='step-details'>The Element Settings clicked in Setting</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:05:26 AM</td>
+													<td class='step-details'>The Element Recruiting Preferences clicked in RecruitingPreference</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:05:26 AM</td>
+													<td class='step-details'>The Element + Add Stage clicked in AddStage</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:05:26 AM</td>
+													<td class='step-details'>The Data :OnRound entered Successfully in StageTitle Button field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:05:26 AM</td>
+													<td class='step-details'>The Element Update clicked in Update Button</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:05:27 AM</td>
+													<td class='step-details'>The Element Save clicked in Save Button</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:05:27 AM</td>
+													<td class='step-details'>Interview Stage :OnRound added Successfully</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='20'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC002_verify_user_is_able_to_edit_the_added_stage_name_under_recruitingPreferences_in_setting_page</h5>
+						<span class="node-time label grey lighten-1 white-text">Apr 16, 2020 08:05:54 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 14s+639ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>Smoke</span>
+								<span class='author label white-text'>Govind</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:05:40 AM</td>
+													<td class='step-details'>The Data :automation@mailinator.com entered Successfully in UserName field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:05:40 AM</td>
+													<td class='step-details'>The Data :automation entered Successfully in Domain field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:05:40 AM</td>
+													<td class='step-details'>The Data :Test@123 entered Successfully in PassWord field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:05:45 AM</td>
+													<td class='step-details'>The Element Login clicked</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:05:47 AM</td>
+													<td class='step-details'>Page title: Auzmor Hire matched successfully</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:05:49 AM</td>
+													<td class='step-details'>The Element Settings clicked in Setting</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:05:51 AM</td>
+													<td class='step-details'>The Element Recruiting Preferences clicked in RecruitingPreference</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:05:53 AM</td>
+													<td class='step-details'>The Element OnRound clicked on Edit Button</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:05:54 AM</td>
+													<td class='step-details'>The Data :OnRoundUpdated entered Successfully in StageTitle Button field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:05:54 AM</td>
+													<td class='step-details'>The Element Update clicked in Update Button</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:05:54 AM</td>
+													<td class='step-details'>The Element Save clicked in Save Button</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:05:54 AM</td>
+													<td class='step-details'>Interview Stage :OnRoundUpdated edited Successfully</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='21'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC003_verify_user_is_able_to_delete_the_added_stage_name_under_recruitingPreferences_in_setting_page</h5>
+						<span class="node-time label grey lighten-1 white-text">Apr 16, 2020 08:06:25 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 17s+145ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>Smoke</span>
+								<span class='author label white-text'>Govind</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:06:08 AM</td>
+													<td class='step-details'>The Data :automation@mailinator.com entered Successfully in UserName field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:06:08 AM</td>
+													<td class='step-details'>The Data :automation entered Successfully in Domain field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:06:08 AM</td>
+													<td class='step-details'>The Data :Test@123 entered Successfully in PassWord field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:06:12 AM</td>
+													<td class='step-details'>The Element Login clicked</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:06:14 AM</td>
+													<td class='step-details'>Page title: Auzmor Hire matched successfully</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:06:17 AM</td>
+													<td class='step-details'>The Element Settings clicked in Setting</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:06:19 AM</td>
+													<td class='step-details'>The Element Recruiting Preferences clicked in RecruitingPreference</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:06:21 AM</td>
+													<td class='step-details'>The Element OnRoundUpdated clicked on Delete Button</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:06:21 AM</td>
+													<td class='step-details'>The Element Delete clicked in confirmDelete button</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:06:25 AM</td>
+													<td class='step-details'>The Element Save clicked in Save Button</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:06:25 AM</td>
+													<td class='step-details'>Interview Stage :OnRoundUpdated deleted Successfully</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='22'>
+					<div class='test-heading'>
+						<span class='test-name'>CompanySetting</span>
+						<span class='test-time'>Apr 16, 2020 08:06:27 AM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Apr 16, 2020 08:06:27 AM</span>
+	<span class='label end-time'>Apr 16, 2020 08:15:24 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 8m 57s+160ms</span>
+</div>
+	<div class='test-desc'>Testing the functionality of SettingFeatures </div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='23'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC001_verify_user_is_able_to_update_companyWebsite_successfully_in_companysetting_page</h5>
+						<span class="node-time label grey lighten-1 white-text">Apr 16, 2020 08:06:51 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 12s+70ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>Smoke</span>
+								<span class='author label white-text'>Govind</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:06:39 AM</td>
+													<td class='step-details'>The Data :automation@mailinator.com entered Successfully in UserName field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:06:40 AM</td>
+													<td class='step-details'>The Data :automation entered Successfully in Domain field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:06:40 AM</td>
+													<td class='step-details'>The Data :Test@123 entered Successfully in PassWord field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:06:44 AM</td>
+													<td class='step-details'>The Element Login clicked</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:06:46 AM</td>
+													<td class='step-details'>Page title: Auzmor Hire matched successfully</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:06:48 AM</td>
+													<td class='step-details'>The Element Settings clicked in Setting</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:06:51 AM</td>
+													<td class='step-details'>The Data :www.automation.com entered Successfully in CompanyWebsite field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:06:51 AM</td>
+													<td class='step-details'>The Element Update clicked in Update</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:06:51 AM</td>
+													<td class='step-details'>CompanyWebsite :www.automation.com updated Successfully</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='24'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC002_verify_user_is_able_to_add_departmentName_successfully_in_companysetting_page</h5>
+						<span class="node-time label grey lighten-1 white-text">Apr 16, 2020 08:07:29 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 16s+600ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>Smoke</span>
+								<span class='author label white-text'>Govind</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:07:13 AM</td>
+													<td class='step-details'>The Data :automation@mailinator.com entered Successfully in UserName field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:07:13 AM</td>
+													<td class='step-details'>The Data :automation entered Successfully in Domain field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:07:13 AM</td>
+													<td class='step-details'>The Data :Test@123 entered Successfully in PassWord field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:07:18 AM</td>
+													<td class='step-details'>The Element Login clicked</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:07:20 AM</td>
+													<td class='step-details'>Page title: Auzmor Hire matched successfully</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:07:22 AM</td>
+													<td class='step-details'>The Element Settings clicked in Setting</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:07:27 AM</td>
+													<td class='step-details'>The Element + Add Department clicked in AddDepartment</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:07:27 AM</td>
+													<td class='step-details'>The Data :AssesmentTeam entered Successfully in DepartmentName field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:07:28 AM</td>
+													<td class='step-details'>The Element Add clicked in AddButton</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:07:29 AM</td>
+													<td class='step-details'>DepartmentName :AssesmentTeam Added Successfully</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='25'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC004_verify_user_is_able_to_delete_the_departmentName_successfully_in_companysetting_page</h5>
+						<span class="node-time label grey lighten-1 white-text">Apr 16, 2020 08:08:03 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 19s+431ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>Smoke</span>
+								<span class='author label white-text'>Govind</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:07:44 AM</td>
+													<td class='step-details'>The Data :automation@mailinator.com entered Successfully in UserName field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:07:44 AM</td>
+													<td class='step-details'>The Data :automation entered Successfully in Domain field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:07:44 AM</td>
+													<td class='step-details'>The Data :Test@123 entered Successfully in PassWord field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:07:49 AM</td>
+													<td class='step-details'>The Element Login clicked</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:07:51 AM</td>
+													<td class='step-details'>Page title: Auzmor Hire matched successfully</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:07:53 AM</td>
+													<td class='step-details'>The Element Settings clicked in Setting</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:07:58 AM</td>
+													<td class='step-details'>The Element AssesmentTeam clicked on Edit Button</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:08:03 AM</td>
+													<td class='step-details'>The Element AssesmentTeam clicked on Delete Button</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:08:03 AM</td>
+													<td class='step-details'>DepartmentName :AssesmentTeam deleted Successfully</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='26'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC005_verify_user_is_able_to_add_Location_successfully_in_companysetting_page</h5>
+						<span class="node-time label grey lighten-1 white-text">Apr 16, 2020 08:08:45 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 20s+211ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>Smoke</span>
+								<span class='author label white-text'>Govind</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:08:25 AM</td>
+													<td class='step-details'>The Data :automation@mailinator.com entered Successfully in UserName field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:08:26 AM</td>
+													<td class='step-details'>The Data :automation entered Successfully in Domain field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:08:26 AM</td>
+													<td class='step-details'>The Data :Test@123 entered Successfully in PassWord field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:08:31 AM</td>
+													<td class='step-details'>The Element Login clicked</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:08:33 AM</td>
+													<td class='step-details'>Page title: Auzmor Hire matched successfully</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:08:35 AM</td>
+													<td class='step-details'>The Element Settings clicked in Setting</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:08:37 AM</td>
+													<td class='step-details'>The Element Locations clicked in LocationMenu</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:08:38 AM</td>
+													<td class='step-details'>The Element Add Location clicked in AddLocation</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:08:38 AM</td>
+													<td class='step-details'>The country :Afghanistan selected Successfully</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:08:41 AM</td>
+													<td class='step-details'>The state :Badakhshan selected Successfully</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:08:43 AM</td>
+													<td class='step-details'>The state :Fayzabad selected Successfully</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:08:43 AM</td>
+													<td class='step-details'>The Data :768414 entered Successfully in Zipcode field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:08:43 AM</td>
+													<td class='step-details'>The Element Add clicked in Add</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:08:45 AM</td>
+													<td class='step-details'>Location :Fayzabad, Badakhshan, Afghanistan Added Successfully</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='27'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC006_verify_user_is_able_to_edit_the_addedLocation_successfully_in_companysetting_page</h5>
+						<span class="node-time label grey lighten-1 white-text">Apr 16, 2020 08:09:17 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 18s+247ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>Smoke</span>
+								<span class='author label white-text'>Govind</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:08:59 AM</td>
+													<td class='step-details'>The Data :automation@mailinator.com entered Successfully in UserName field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:08:59 AM</td>
+													<td class='step-details'>The Data :automation entered Successfully in Domain field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:08:59 AM</td>
+													<td class='step-details'>The Data :Test@123 entered Successfully in PassWord field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:09:03 AM</td>
+													<td class='step-details'>The Element Login clicked</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:09:05 AM</td>
+													<td class='step-details'>Page title: Auzmor Hire matched successfully</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:09:08 AM</td>
+													<td class='step-details'>The Element Settings clicked in Setting</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:09:10 AM</td>
+													<td class='step-details'>The Element Locations clicked in LocationMenu</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:09:14 AM</td>
+													<td class='step-details'>The Element Fayzabad, Badakhshan, Afghanistan clicked</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:09:15 AM</td>
+													<td class='step-details'>The Data :870616 entered Successfully in Zipcode field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:09:15 AM</td>
+													<td class='step-details'>The Element Update clicked in Add</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:09:17 AM</td>
+													<td class='step-details'>Location :Fayzabad, Badakhshan, Afghanistan edited Successfully</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf fail' status='fail' test-id='28'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC007_verify_user_is_able_to_delete_the_addedLocation_successfully_in_companysetting_page</h5>
+						<span class="node-time label grey lighten-1 white-text">Apr 16, 2020 08:10:38 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 1m 8s+202ms</span>
+						<span class='test-status right fail'>fail</span>
+								<span class='category label white-text'>Smoke</span>
+								<span class='author label white-text'>Govind</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:09:30 AM</td>
+													<td class='step-details'>The Data :automation@mailinator.com entered Successfully in UserName field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:09:30 AM</td>
+													<td class='step-details'>The Data :automation entered Successfully in Domain field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:09:30 AM</td>
+													<td class='step-details'>The Data :Test@123 entered Successfully in PassWord field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:09:34 AM</td>
+													<td class='step-details'>The Element Login clicked</td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>8:09:36 AM</td>
+													<td class='step-details'>Page url: Auzmor Hire not matched</td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>8:10:38 AM</td>
+													<td class='step-details'>Test Case Not executed Successfully</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='29'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC008_verify_application_throwing_error_when_country_is_not_selected_while_trying_to_add_location</h5>
+						<span class="node-time label grey lighten-1 white-text">Apr 16, 2020 08:11:07 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 14s+268ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>Smoke</span>
+								<span class='author label white-text'>Govind</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:10:53 AM</td>
+													<td class='step-details'>The Data :automation@mailinator.com entered Successfully in UserName field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:10:53 AM</td>
+													<td class='step-details'>The Data :automation entered Successfully in Domain field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:10:54 AM</td>
+													<td class='step-details'>The Data :Test@123 entered Successfully in PassWord field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:10:57 AM</td>
+													<td class='step-details'>The Element Login clicked</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:10:59 AM</td>
+													<td class='step-details'>Page title: Auzmor Hire matched successfully</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:11:02 AM</td>
+													<td class='step-details'>The Element Settings clicked in Setting</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:11:04 AM</td>
+													<td class='step-details'>The Element Locations clicked in LocationMenu</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:11:05 AM</td>
+													<td class='step-details'>The Element Add Location clicked in AddLocation</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:11:05 AM</td>
+													<td class='step-details'>The Element Add clicked in Add</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:11:07 AM</td>
+													<td class='step-details'>Country Error Text :Please select a country! Validated Successfully</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='30'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC009_verify_application_throwing_error_when_state_is_not_selected_while_trying_to_add_location</h5>
+						<span class="node-time label grey lighten-1 white-text">Apr 16, 2020 08:11:37 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 14s+568ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>Smoke</span>
+								<span class='author label white-text'>Govind</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:11:23 AM</td>
+													<td class='step-details'>The Data :automation@mailinator.com entered Successfully in UserName field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:11:23 AM</td>
+													<td class='step-details'>The Data :automation entered Successfully in Domain field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:11:23 AM</td>
+													<td class='step-details'>The Data :Test@123 entered Successfully in PassWord field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:11:27 AM</td>
+													<td class='step-details'>The Element Login clicked</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:11:29 AM</td>
+													<td class='step-details'>Page title: Auzmor Hire matched successfully</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:11:32 AM</td>
+													<td class='step-details'>The Element Settings clicked in Setting</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:11:34 AM</td>
+													<td class='step-details'>The Element Locations clicked in LocationMenu</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:11:35 AM</td>
+													<td class='step-details'>The Element Add Location clicked in AddLocation</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:11:35 AM</td>
+													<td class='step-details'>The Element Add clicked in Add</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:11:37 AM</td>
+													<td class='step-details'>State Error Text :Please select a state! Validated Successfully</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='31'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC010_verify_application_throwing_error_when_city_is_not_selected_while_trying_to_add_location</h5>
+						<span class="node-time label grey lighten-1 white-text">Apr 16, 2020 08:12:05 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 14s+841ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>Smoke</span>
+								<span class='author label white-text'>Govind</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:11:51 AM</td>
+													<td class='step-details'>The Data :automation@mailinator.com entered Successfully in UserName field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:11:51 AM</td>
+													<td class='step-details'>The Data :automation entered Successfully in Domain field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:11:51 AM</td>
+													<td class='step-details'>The Data :Test@123 entered Successfully in PassWord field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:11:55 AM</td>
+													<td class='step-details'>The Element Login clicked</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:11:57 AM</td>
+													<td class='step-details'>Page title: Auzmor Hire matched successfully</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:12:00 AM</td>
+													<td class='step-details'>The Element Settings clicked in Setting</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:12:02 AM</td>
+													<td class='step-details'>The Element Locations clicked in LocationMenu</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:12:03 AM</td>
+													<td class='step-details'>The Element Add Location clicked in AddLocation</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:12:03 AM</td>
+													<td class='step-details'>The Element Add clicked in Add</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:12:05 AM</td>
+													<td class='step-details'>City Error Text :Please select a city! Validated Successfully</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='32'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC011_verify_application_throwing_error_when_zipcode_is_not_entered_while_trying_to_add_location</h5>
+						<span class="node-time label grey lighten-1 white-text">Apr 16, 2020 08:12:33 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 13s+892ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>Smoke</span>
+								<span class='author label white-text'>Govind</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:12:19 AM</td>
+													<td class='step-details'>The Data :automation@mailinator.com entered Successfully in UserName field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:12:19 AM</td>
+													<td class='step-details'>The Data :automation entered Successfully in Domain field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:12:19 AM</td>
+													<td class='step-details'>The Data :Test@123 entered Successfully in PassWord field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:12:23 AM</td>
+													<td class='step-details'>The Element Login clicked</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:12:25 AM</td>
+													<td class='step-details'>Page title: Auzmor Hire matched successfully</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:12:27 AM</td>
+													<td class='step-details'>The Element Settings clicked in Setting</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:12:30 AM</td>
+													<td class='step-details'>The Element Locations clicked in LocationMenu</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:12:31 AM</td>
+													<td class='step-details'>The Element Add Location clicked in AddLocation</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:12:31 AM</td>
+													<td class='step-details'>The Element Add clicked in Add</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:12:33 AM</td>
+													<td class='step-details'>ZipCode Error Text :Zipcode is required! Validated Successfully</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf fail' status='fail' test-id='33'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC012_verify_user_is_able_to_add_tagName_under_compnay_settingPage</h5>
+						<span class="node-time label grey lighten-1 white-text">Apr 16, 2020 08:14:00 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 1m 11s+325ms</span>
+						<span class='test-status right fail'>fail</span>
+								<span class='category label white-text'>Smoke</span>
+								<span class='author label white-text'>Govind</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:12:49 AM</td>
+													<td class='step-details'>The Data :automation@mailinator.com entered Successfully in UserName field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:12:49 AM</td>
+													<td class='step-details'>The Data :automation entered Successfully in Domain field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:12:49 AM</td>
+													<td class='step-details'>The Data :Test@123 entered Successfully in PassWord field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:12:53 AM</td>
+													<td class='step-details'>The Element Login clicked</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:12:55 AM</td>
+													<td class='step-details'>Page title: Auzmor Hire matched successfully</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:12:58 AM</td>
+													<td class='step-details'>The Element Settings clicked in Setting</td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>8:14:00 AM</td>
+													<td class='step-details'>Test Case Not executed Successfully</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf fail' status='fail' test-id='34'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC013_verify_user_is_able_to_delete_the_added_tagName_under_company_settingPage</h5>
+						<span class="node-time label grey lighten-1 white-text">Apr 16, 2020 08:15:24 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 1m 10s+461ms</span>
+						<span class='test-status right fail'>fail</span>
+								<span class='category label white-text'>Smoke</span>
+								<span class='author label white-text'>Govind</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:14:13 AM</td>
+													<td class='step-details'>The Data :automation@mailinator.com entered Successfully in UserName field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:14:13 AM</td>
+													<td class='step-details'>The Data :automation entered Successfully in Domain field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:14:14 AM</td>
+													<td class='step-details'>The Data :Test@123 entered Successfully in PassWord field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:14:17 AM</td>
+													<td class='step-details'>The Element Login clicked</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:14:19 AM</td>
+													<td class='step-details'>Page title: Auzmor Hire matched successfully</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:14:22 AM</td>
+													<td class='step-details'>The Element Settings clicked in Setting</td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>8:15:24 AM</td>
+													<td class='step-details'>Test Case Not executed Successfully</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='35'>
+					<div class='test-heading'>
+						<span class='test-name'>Setting</span>
+						<span class='test-time'>Apr 16, 2020 08:15:25 AM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Apr 16, 2020 08:15:25 AM</span>
+	<span class='label end-time'>Apr 16, 2020 08:18:02 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 2m 36s+29ms</span>
+</div>
+	<div class='test-desc'>Testing the Team Member Adding Functionality </div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf fail' status='fail' test-id='36'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC001_verify_user_is_able_to_add_NewteamMember_under_TeamMember_in_setting_page</h5>
+						<span class="node-time label grey lighten-1 white-text">Apr 16, 2020 08:15:54 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 12s+183ms</span>
+						<span class='test-status right fail'>fail</span>
+								<span class='category label white-text'>Smoke</span>
+								<span class='author label white-text'>Govind</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:15:42 AM</td>
+													<td class='step-details'>The Data :automation@mailinator.com entered Successfully in UserName field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:15:42 AM</td>
+													<td class='step-details'>The Data :automation entered Successfully in Domain field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:15:42 AM</td>
+													<td class='step-details'>The Data :Test@123 entered Successfully in PassWord field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:15:46 AM</td>
+													<td class='step-details'>The Element Login clicked</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:15:48 AM</td>
+													<td class='step-details'>Page title: Auzmor Hire matched successfully</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:15:50 AM</td>
+													<td class='step-details'>The Element Settings clicked in Setting</td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>8:15:54 AM</td>
+													<td class='step-details'>Test Case Not executed Successfully</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf fail' status='fail' test-id='37'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC002_verify_application_updated_emailid_properly_In_teamMember_Page</h5>
+						<span class="node-time label grey lighten-1 white-text">Apr 16, 2020 08:16:28 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 12s+659ms</span>
+						<span class='test-status right fail'>fail</span>
+								<span class='category label white-text'>Smoke</span>
+								<span class='author label white-text'>Govind</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:16:16 AM</td>
+													<td class='step-details'>The Data :automation@mailinator.com entered Successfully in UserName field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:16:16 AM</td>
+													<td class='step-details'>The Data :automation entered Successfully in Domain field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:16:16 AM</td>
+													<td class='step-details'>The Data :Test@123 entered Successfully in PassWord field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:16:21 AM</td>
+													<td class='step-details'>The Element Login clicked</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:16:23 AM</td>
+													<td class='step-details'>Page title: Auzmor Hire matched successfully</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:16:25 AM</td>
+													<td class='step-details'>The Element Settings clicked in Setting</td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>8:16:28 AM</td>
+													<td class='step-details'>Test Case Not executed Successfully</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf fail' status='fail' test-id='38'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC003_verify_application_updated_role_properly_In_teamMember_Page</h5>
+						<span class="node-time label grey lighten-1 white-text">Apr 16, 2020 08:17:00 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 12s+527ms</span>
+						<span class='test-status right fail'>fail</span>
+								<span class='category label white-text'>Smoke</span>
+								<span class='author label white-text'>Govind</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:16:48 AM</td>
+													<td class='step-details'>The Data :automation@mailinator.com entered Successfully in UserName field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:16:48 AM</td>
+													<td class='step-details'>The Data :automation entered Successfully in Domain field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:16:48 AM</td>
+													<td class='step-details'>The Data :Test@123 entered Successfully in PassWord field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:16:52 AM</td>
+													<td class='step-details'>The Element Login clicked</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:16:54 AM</td>
+													<td class='step-details'>Page title: Auzmor Hire matched successfully</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:16:57 AM</td>
+													<td class='step-details'>The Element Settings clicked in Setting</td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>8:17:00 AM</td>
+													<td class='step-details'>Test Case Not executed Successfully</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf fail' status='fail' test-id='39'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC004_verify_user_is_able_to_resend_the_invite_for_adding_the_team_member</h5>
+						<span class="node-time label grey lighten-1 white-text">Apr 16, 2020 08:17:29 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 12s+75ms</span>
+						<span class='test-status right fail'>fail</span>
+								<span class='category label white-text'>Smoke</span>
+								<span class='author label white-text'>Govind</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:17:17 AM</td>
+													<td class='step-details'>The Data :automation@mailinator.com entered Successfully in UserName field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:17:17 AM</td>
+													<td class='step-details'>The Data :automation entered Successfully in Domain field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:17:17 AM</td>
+													<td class='step-details'>The Data :Test@123 entered Successfully in PassWord field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:17:21 AM</td>
+													<td class='step-details'>The Element Login clicked</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:17:23 AM</td>
+													<td class='step-details'>Page title: Auzmor Hire matched successfully</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:17:25 AM</td>
+													<td class='step-details'>The Element Settings clicked in Setting</td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>8:17:29 AM</td>
+													<td class='step-details'>Test Case Not executed Successfully</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf fail' status='fail' test-id='40'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC005_verify_user_is_able_to_delete_invite_which_is_added</h5>
+						<span class="node-time label grey lighten-1 white-text">Apr 16, 2020 08:18:02 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 13s+142ms</span>
+						<span class='test-status right fail'>fail</span>
+								<span class='category label white-text'>Smoke</span>
+								<span class='author label white-text'>Govind</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:17:49 AM</td>
+													<td class='step-details'>The Data :automation@mailinator.com entered Successfully in UserName field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:17:49 AM</td>
+													<td class='step-details'>The Data :automation entered Successfully in Domain field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:17:49 AM</td>
+													<td class='step-details'>The Data :Test@123 entered Successfully in PassWord field</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:17:54 AM</td>
+													<td class='step-details'>The Element Login clicked</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:17:56 AM</td>
+													<td class='step-details'>Page title: Auzmor Hire matched successfully</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:17:58 AM</td>
+													<td class='step-details'>The Element Settings clicked in Setting</td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>8:18:02 AM</td>
+													<td class='step-details'>Test Case Not executed Successfully</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='test-name'></h5>
+
+			<div id='step-filters' class="right">
+				<span class="blue-text" status="info" alt="info" title="info"><i class="material-icons">info_outline</i></span>
+				<span class="green-text" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></span>
+				<span class="red-text" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></span>
+				<span class="red-text text-darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></span>
+				<span class="pink-text text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></span>
+				<span class="orange-text" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></span>
+				<span class="teal-text" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></span>
+				<span status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></span>
+			</div>
+		</div>
+	</div>
+	<!-- subview right -->
+
+</div>
+<!-- test view -->
+<div id='category-view' class='view hide'>
+
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+				
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Categories</h3>
+			<ul id='category-collection' class='category-collection'>
+				
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>Smoke</span>
+						<span class='category-status right'>
+							<span class='label pass'>22</span>
+							<span class='label fail'>11</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 22</span>
+							<span class='label red lighten-1 white-text'>Failed: 11</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 16, 2020 07:56:20 AM</td>
+										<td class='linked' test-id='2'>Setting.TC001_verify_user_is_able_to_add_NewEmailTemplate_under_setting_page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 16, 2020 07:56:53 AM</td>
+										<td class='linked' test-id='3'>Setting.TC002_verify_user_is_able_to_edit_the_EmailTemplate_added_under_setting_page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 16, 2020 07:57:24 AM</td>
+										<td class='linked' test-id='4'>Setting.TC003_verify_user_is_able_to_delete_the_EmailTemplate_which_is_added_under_setting_page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 16, 2020 07:57:55 AM</td>
+										<td class='linked' test-id='6'>Setting.TC001_verify_user_is_able_to_add_NewJobTemplate_under_setting_page</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Apr 16, 2020 07:58:54 AM</td>
+										<td class='linked' test-id='7'>Setting.TC002_verify_user_is_able_to_edit_the_JobTemplate_which_is_added_under_setting_page</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Apr 16, 2020 08:00:28 AM</td>
+										<td class='linked' test-id='8'>Setting.TC003_verify_user_is_able_to_delete_the_JobTemplate_which_is_added_under_setting_page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 16, 2020 08:01:04 AM</td>
+										<td class='linked' test-id='10'>Setting.TC001_verify_user_is_able_to_add_customFields_by_selecting_shortanswer_as_yes_in_setting_page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 16, 2020 08:01:32 AM</td>
+										<td class='linked' test-id='11'>Setting.TC002_verify_user_is_able_to_delete_the_added_customFields_of_the_shortanswer_as_yes_in_setting_page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 16, 2020 08:02:01 AM</td>
+										<td class='linked' test-id='12'>Setting.TC003_verify_user_is_able_to_add_customFields_by_selecting_shortanswer_as_no_in_setting_page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 16, 2020 08:02:31 AM</td>
+										<td class='linked' test-id='13'>Setting.TC004_verify_user_is_able_to_search_the_added_customFields_in_setting_page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 16, 2020 08:02:57 AM</td>
+										<td class='linked' test-id='14'>Setting.TC005_verify_Application_throwing_proper_error_while_short_answer_is_not_checked_in_customFields</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 16, 2020 08:03:24 AM</td>
+										<td class='linked' test-id='15'>Setting.TC006_verify_user_is_able_to_delete_the_added_customFields_of_the_shortanswer_as_no_in_setting_page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 16, 2020 08:03:49 AM</td>
+										<td class='linked' test-id='17'>Setting.TC001_verify_user_is_able_to_add_companyProfile_under_setting_page</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Apr 16, 2020 08:05:14 AM</td>
+										<td class='linked' test-id='19'>CompanySetting.TC001_verify_user_is_able_to_add_staging_under_recruitingPreferences_in_setting_page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 16, 2020 08:05:40 AM</td>
+										<td class='linked' test-id='20'>CompanySetting.TC002_verify_user_is_able_to_edit_the_added_stage_name_under_recruitingPreferences_in_setting_page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 16, 2020 08:06:07 AM</td>
+										<td class='linked' test-id='21'>CompanySetting.TC003_verify_user_is_able_to_delete_the_added_stage_name_under_recruitingPreferences_in_setting_page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 16, 2020 08:06:39 AM</td>
+										<td class='linked' test-id='23'>CompanySetting.TC001_verify_user_is_able_to_update_companyWebsite_successfully_in_companysetting_page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 16, 2020 08:07:13 AM</td>
+										<td class='linked' test-id='24'>CompanySetting.TC002_verify_user_is_able_to_add_departmentName_successfully_in_companysetting_page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 16, 2020 08:07:44 AM</td>
+										<td class='linked' test-id='25'>CompanySetting.TC004_verify_user_is_able_to_delete_the_departmentName_successfully_in_companysetting_page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 16, 2020 08:08:25 AM</td>
+										<td class='linked' test-id='26'>CompanySetting.TC005_verify_user_is_able_to_add_Location_successfully_in_companysetting_page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 16, 2020 08:08:59 AM</td>
+										<td class='linked' test-id='27'>CompanySetting.TC006_verify_user_is_able_to_edit_the_addedLocation_successfully_in_companysetting_page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 16, 2020 08:09:30 AM</td>
+										<td class='linked' test-id='28'>CompanySetting.TC007_verify_user_is_able_to_delete_the_addedLocation_successfully_in_companysetting_page</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Apr 16, 2020 08:10:53 AM</td>
+										<td class='linked' test-id='29'>CompanySetting.TC008_verify_application_throwing_error_when_country_is_not_selected_while_trying_to_add_location</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 16, 2020 08:11:22 AM</td>
+										<td class='linked' test-id='30'>CompanySetting.TC009_verify_application_throwing_error_when_state_is_not_selected_while_trying_to_add_location</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 16, 2020 08:11:50 AM</td>
+										<td class='linked' test-id='31'>CompanySetting.TC010_verify_application_throwing_error_when_city_is_not_selected_while_trying_to_add_location</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 16, 2020 08:12:19 AM</td>
+										<td class='linked' test-id='32'>CompanySetting.TC011_verify_application_throwing_error_when_zipcode_is_not_entered_while_trying_to_add_location</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 16, 2020 08:12:48 AM</td>
+										<td class='linked' test-id='33'>CompanySetting.TC012_verify_user_is_able_to_add_tagName_under_compnay_settingPage</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Apr 16, 2020 08:14:13 AM</td>
+										<td class='linked' test-id='34'>CompanySetting.TC013_verify_user_is_able_to_delete_the_added_tagName_under_company_settingPage</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Apr 16, 2020 08:15:41 AM</td>
+										<td class='linked' test-id='36'>Setting.TC001_verify_user_is_able_to_add_NewteamMember_under_TeamMember_in_setting_page</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Apr 16, 2020 08:16:16 AM</td>
+										<td class='linked' test-id='37'>Setting.TC002_verify_application_updated_emailid_properly_In_teamMember_Page</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Apr 16, 2020 08:16:47 AM</td>
+										<td class='linked' test-id='38'>Setting.TC003_verify_application_updated_role_properly_In_teamMember_Page</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Apr 16, 2020 08:17:16 AM</td>
+										<td class='linked' test-id='39'>Setting.TC004_verify_user_is_able_to_resend_the_invite_for_adding_the_team_member</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Apr 16, 2020 08:17:48 AM</td>
+										<td class='linked' test-id='40'>Setting.TC005_verify_user_is_able_to_delete_invite_which_is_added</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='category-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- category view -->
+<div id='author-view' class='view hide'>
+    <section id='controls'>
+        <div class='controls grey lighten-4'>
+            <!-- search -->
+            <div class='chip transparent' alt='Search Authors' title='Search Authors'>
+                <a href="#" class='search-div'>
+                    <i class='material-icons'>search</i> Search
+                </a>
+
+                <div class='input-field left hide'>
+                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Authors...'>
+                </div>
+
+            </div>
+            <!-- search -->
+        </div>
+    </section>
+
+    <div class='subview-left left'>
+
+        <div class='view-summary'>
+            <h5>Authors</h5>
+                <ul id='author-collection' class='author-collection'>
+
+                        <li class='author displayed active'>
+                            <div class='author-heading'>
+                                <span class='author-name'>Govind</span>
+                                <span class='author-status right'>
+                                        <span class='label pass'>22</span>
+                                        <span class='label fail'>11</span>
+						        </span>
+                            </div>
+                            <div class='author-content hide'>
+                                <div class='author-status-counts'>
+                                    <span class='label green accent-4 white-text'>Passed: 22</span>
+                                    <span class='label red lighten-1 white-text'>Failed: 11</span>
+                                    
+                                </div>
+
+                                <div class='author-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Apr 16, 2020 07:56:20 AM</td>
+                                                <td class='linked' test-id='2'>Setting.TC001_verify_user_is_able_to_add_NewEmailTemplate_under_setting_page</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Apr 16, 2020 07:56:53 AM</td>
+                                                <td class='linked' test-id='3'>Setting.TC002_verify_user_is_able_to_edit_the_EmailTemplate_added_under_setting_page</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Apr 16, 2020 07:57:24 AM</td>
+                                                <td class='linked' test-id='4'>Setting.TC003_verify_user_is_able_to_delete_the_EmailTemplate_which_is_added_under_setting_page</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Apr 16, 2020 07:57:55 AM</td>
+                                                <td class='linked' test-id='6'>Setting.TC001_verify_user_is_able_to_add_NewJobTemplate_under_setting_page</td>
+                                                <td><span class='test-status fail'>fail</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Apr 16, 2020 07:58:54 AM</td>
+                                                <td class='linked' test-id='7'>Setting.TC002_verify_user_is_able_to_edit_the_JobTemplate_which_is_added_under_setting_page</td>
+                                                <td><span class='test-status fail'>fail</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Apr 16, 2020 08:00:28 AM</td>
+                                                <td class='linked' test-id='8'>Setting.TC003_verify_user_is_able_to_delete_the_JobTemplate_which_is_added_under_setting_page</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Apr 16, 2020 08:01:04 AM</td>
+                                                <td class='linked' test-id='10'>Setting.TC001_verify_user_is_able_to_add_customFields_by_selecting_shortanswer_as_yes_in_setting_page</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Apr 16, 2020 08:01:32 AM</td>
+                                                <td class='linked' test-id='11'>Setting.TC002_verify_user_is_able_to_delete_the_added_customFields_of_the_shortanswer_as_yes_in_setting_page</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Apr 16, 2020 08:02:01 AM</td>
+                                                <td class='linked' test-id='12'>Setting.TC003_verify_user_is_able_to_add_customFields_by_selecting_shortanswer_as_no_in_setting_page</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Apr 16, 2020 08:02:31 AM</td>
+                                                <td class='linked' test-id='13'>Setting.TC004_verify_user_is_able_to_search_the_added_customFields_in_setting_page</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Apr 16, 2020 08:02:57 AM</td>
+                                                <td class='linked' test-id='14'>Setting.TC005_verify_Application_throwing_proper_error_while_short_answer_is_not_checked_in_customFields</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Apr 16, 2020 08:03:24 AM</td>
+                                                <td class='linked' test-id='15'>Setting.TC006_verify_user_is_able_to_delete_the_added_customFields_of_the_shortanswer_as_no_in_setting_page</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Apr 16, 2020 08:03:49 AM</td>
+                                                <td class='linked' test-id='17'>Setting.TC001_verify_user_is_able_to_add_companyProfile_under_setting_page</td>
+                                                <td><span class='test-status fail'>fail</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Apr 16, 2020 08:05:14 AM</td>
+                                                <td class='linked' test-id='19'>CompanySetting.TC001_verify_user_is_able_to_add_staging_under_recruitingPreferences_in_setting_page</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Apr 16, 2020 08:05:40 AM</td>
+                                                <td class='linked' test-id='20'>CompanySetting.TC002_verify_user_is_able_to_edit_the_added_stage_name_under_recruitingPreferences_in_setting_page</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Apr 16, 2020 08:06:07 AM</td>
+                                                <td class='linked' test-id='21'>CompanySetting.TC003_verify_user_is_able_to_delete_the_added_stage_name_under_recruitingPreferences_in_setting_page</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Apr 16, 2020 08:06:39 AM</td>
+                                                <td class='linked' test-id='23'>CompanySetting.TC001_verify_user_is_able_to_update_companyWebsite_successfully_in_companysetting_page</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Apr 16, 2020 08:07:13 AM</td>
+                                                <td class='linked' test-id='24'>CompanySetting.TC002_verify_user_is_able_to_add_departmentName_successfully_in_companysetting_page</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Apr 16, 2020 08:07:44 AM</td>
+                                                <td class='linked' test-id='25'>CompanySetting.TC004_verify_user_is_able_to_delete_the_departmentName_successfully_in_companysetting_page</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Apr 16, 2020 08:08:25 AM</td>
+                                                <td class='linked' test-id='26'>CompanySetting.TC005_verify_user_is_able_to_add_Location_successfully_in_companysetting_page</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Apr 16, 2020 08:08:59 AM</td>
+                                                <td class='linked' test-id='27'>CompanySetting.TC006_verify_user_is_able_to_edit_the_addedLocation_successfully_in_companysetting_page</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Apr 16, 2020 08:09:30 AM</td>
+                                                <td class='linked' test-id='28'>CompanySetting.TC007_verify_user_is_able_to_delete_the_addedLocation_successfully_in_companysetting_page</td>
+                                                <td><span class='test-status fail'>fail</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Apr 16, 2020 08:10:53 AM</td>
+                                                <td class='linked' test-id='29'>CompanySetting.TC008_verify_application_throwing_error_when_country_is_not_selected_while_trying_to_add_location</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Apr 16, 2020 08:11:22 AM</td>
+                                                <td class='linked' test-id='30'>CompanySetting.TC009_verify_application_throwing_error_when_state_is_not_selected_while_trying_to_add_location</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Apr 16, 2020 08:11:50 AM</td>
+                                                <td class='linked' test-id='31'>CompanySetting.TC010_verify_application_throwing_error_when_city_is_not_selected_while_trying_to_add_location</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Apr 16, 2020 08:12:19 AM</td>
+                                                <td class='linked' test-id='32'>CompanySetting.TC011_verify_application_throwing_error_when_zipcode_is_not_entered_while_trying_to_add_location</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Apr 16, 2020 08:12:48 AM</td>
+                                                <td class='linked' test-id='33'>CompanySetting.TC012_verify_user_is_able_to_add_tagName_under_compnay_settingPage</td>
+                                                <td><span class='test-status fail'>fail</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Apr 16, 2020 08:14:13 AM</td>
+                                                <td class='linked' test-id='34'>CompanySetting.TC013_verify_user_is_able_to_delete_the_added_tagName_under_company_settingPage</td>
+                                                <td><span class='test-status fail'>fail</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Apr 16, 2020 08:15:41 AM</td>
+                                                <td class='linked' test-id='36'>Setting.TC001_verify_user_is_able_to_add_NewteamMember_under_TeamMember_in_setting_page</td>
+                                                <td><span class='test-status fail'>fail</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Apr 16, 2020 08:16:16 AM</td>
+                                                <td class='linked' test-id='37'>Setting.TC002_verify_application_updated_emailid_properly_In_teamMember_Page</td>
+                                                <td><span class='test-status fail'>fail</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Apr 16, 2020 08:16:47 AM</td>
+                                                <td class='linked' test-id='38'>Setting.TC003_verify_application_updated_role_properly_In_teamMember_Page</td>
+                                                <td><span class='test-status fail'>fail</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Apr 16, 2020 08:17:16 AM</td>
+                                                <td class='linked' test-id='39'>Setting.TC004_verify_user_is_able_to_resend_the_invite_for_adding_the_team_member</td>
+                                                <td><span class='test-status fail'>fail</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Apr 16, 2020 08:17:48 AM</td>
+                                                <td class='linked' test-id='40'>Setting.TC005_verify_user_is_able_to_delete_invite_which_is_added</td>
+                                                <td><span class='test-status fail'>fail</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+
+                </ul>
+        </div>
+    </div>
+
+    <div class='subview-right left'>
+        <div class='view-summary'>
+            <h5 class='author-name'></h5>
+        </div>
+    </div>
+</div>
+<!-- exception view -->
+<div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Tests
+					<div class='panel-lead'>33</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>319</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Apr 16, 2020 07:56:07 AM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Apr 16, 2020 08:18:04 AM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>0h 21m 56s+228ms</div>
+				</div>
+			</div>
+			<div class='col s6'>
+				<div class='card-panel dashboard-categories'>
+					<span class='right label cyan white-text'>Categories</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Passed</th>
+							<th>Failed</th>
+							<th>Others</th>
+							<th>Passed %</th>
+						</tr>
+						<tr>
+							<td>Smoke</td>
+							<td>22</td>
+							<td>11</td>
+							<td>0</td>
+							<td>
+									66.667%
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+<!-- testrunner-logs view -->
+		</div>
+		<!-- container -->
+
+		<script>
+			var statusGroup = {
+				passParent: 22,
+				failParent: 11,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				exceptionsParent: 11,
+				
+				passChild: 307,
+				failChild: 12,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 0,
+				exceptionsChild: 12,
+				
+				passGrandChild: 0,
+				failGrandChild: 0,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+				exceptionsGrandChild: 0,
+			};
+		</script>
+		
+			<script src='https://cdn.rawgit.com/anshooarora/extentreports-java/fca20fb7653aade98810546ab96a2a4360e3e712/dist/js/extent.js' type='text/javascript'></script>
+		
+		
+ 		<script type='text/javascript'>
+ 		</script>
+	</body>
+	
+</html>

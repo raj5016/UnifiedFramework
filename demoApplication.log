@@ -1,0 +1,993 @@
+2020-02-04 08:33:05 DEBUG headers:267 - << Vary: Accept-Encoding,X-APP-JSON
+2020-02-04 08:33:05 DEBUG headers:267 - << Via: 1.1 varnish (Varnish/6.0)
+2020-02-04 08:33:05 DEBUG headers:267 - << Content-Length: 73
+2020-02-04 08:33:05 DEBUG DefaultHttpClient:511 - Connection can be kept alive indefinitely
+2020-02-04 08:33:05 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json;charset=utf-8
+2020-02-04 08:33:05 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-02-04 08:33:05 DEBUG wire:86 -  << "{"status":"success","data":{"name":"","salary":"123","age":"23","id":69}}"
+2020-02-04 08:33:05 DEBUG BasicClientConnectionManager:203 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@1e411d81
+2020-02-04 08:33:05 DEBUG BasicClientConnectionManager:228 - Connection can be kept alive indefinitely
+2020-02-04 08:33:05 DEBUG cache:45 - Couldn't find template in cache for "index.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 08:33:05 DEBUG cache:45 - TemplateLoader.findTemplateSource("index_en.ftl"): Not found
+2020-02-04 08:33:05 DEBUG cache:45 - TemplateLoader.findTemplateSource("index.ftl"): Found
+2020-02-04 08:33:05 DEBUG cache:45 - Loading template for "index.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/index.ftl"
+2020-02-04 08:33:05 DEBUG cache:45 - Couldn't find template in cache for "head.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 08:33:05 DEBUG cache:45 - TemplateLoader.findTemplateSource("head_en.ftl"): Not found
+2020-02-04 08:33:05 DEBUG cache:45 - TemplateLoader.findTemplateSource("head.ftl"): Found
+2020-02-04 08:33:05 DEBUG cache:45 - Loading template for "head.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/head.ftl"
+2020-02-04 08:33:05 DEBUG cache:45 - Couldn't find template in cache for "nav.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 08:33:05 DEBUG cache:45 - TemplateLoader.findTemplateSource("nav_en.ftl"): Not found
+2020-02-04 08:33:05 DEBUG cache:45 - TemplateLoader.findTemplateSource("nav.ftl"): Found
+2020-02-04 08:33:05 DEBUG cache:45 - Loading template for "nav.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/nav.ftl"
+2020-02-04 08:33:05 DEBUG cache:45 - Couldn't find template in cache for "test-view/test-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 08:33:05 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/test-view_en.ftl"): Not found
+2020-02-04 08:33:05 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/test-view.ftl"): Found
+2020-02-04 08:33:05 DEBUG cache:45 - Loading template for "test-view/test-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view.ftl"
+2020-02-04 08:33:05 DEBUG cache:45 - Couldn't find template in cache for "test-view/test-view-charts.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 08:33:05 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/test-view-charts_en.ftl"): Not found
+2020-02-04 08:33:05 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/test-view-charts.ftl"): Found
+2020-02-04 08:33:05 DEBUG cache:45 - Loading template for "test-view/test-view-charts.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view-charts.ftl"
+2020-02-04 08:33:05 DEBUG cache:45 - Couldn't find template in cache for "test-view/standard.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 08:33:05 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/standard_en.ftl"): Not found
+2020-02-04 08:33:05 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/standard.ftl"): Found
+2020-02-04 08:33:05 DEBUG cache:45 - Loading template for "test-view/standard.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/test-view/standard.ftl"
+2020-02-04 08:33:05 DEBUG cache:45 - Couldn't find template in cache for "category-view/category-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 08:33:05 DEBUG cache:45 - TemplateLoader.findTemplateSource("category-view/category-view_en.ftl"): Not found
+2020-02-04 08:33:05 DEBUG cache:45 - TemplateLoader.findTemplateSource("category-view/category-view.ftl"): Found
+2020-02-04 08:33:05 DEBUG cache:45 - Loading template for "category-view/category-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/category-view/category-view.ftl"
+2020-02-04 08:33:05 DEBUG cache:45 - Couldn't find template in cache for "author-view/author-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 08:33:05 DEBUG cache:45 - TemplateLoader.findTemplateSource("author-view/author-view_en.ftl"): Not found
+2020-02-04 08:33:05 DEBUG cache:45 - TemplateLoader.findTemplateSource("author-view/author-view.ftl"): Found
+2020-02-04 08:33:05 DEBUG cache:45 - Loading template for "author-view/author-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/author-view/author-view.ftl"
+2020-02-04 08:33:05 DEBUG cache:45 - Couldn't find template in cache for "exception-view/exception-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 08:33:05 DEBUG cache:45 - TemplateLoader.findTemplateSource("exception-view/exception-view_en.ftl"): Not found
+2020-02-04 08:33:05 DEBUG cache:45 - TemplateLoader.findTemplateSource("exception-view/exception-view.ftl"): Found
+2020-02-04 08:33:05 DEBUG cache:45 - Loading template for "exception-view/exception-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/exception-view/exception-view.ftl"
+2020-02-04 08:33:05 DEBUG cache:45 - Couldn't find template in cache for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 08:33:05 DEBUG cache:45 - TemplateLoader.findTemplateSource("dashboard-view/dashboard-view_en.ftl"): Not found
+2020-02-04 08:33:05 DEBUG cache:45 - TemplateLoader.findTemplateSource("dashboard-view/dashboard-view.ftl"): Found
+2020-02-04 08:33:05 DEBUG cache:45 - Loading template for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/dashboard-view/dashboard-view.ftl"
+2020-02-04 08:33:05 DEBUG cache:45 - Couldn't find template in cache for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 08:33:05 DEBUG cache:45 - TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view_en.ftl"): Not found
+2020-02-04 08:33:05 DEBUG cache:45 - TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view.ftl"): Found
+2020-02-04 08:33:05 DEBUG cache:45 - Loading template for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/logs-view/testrunner-logs-view.ftl"
+2020-02-04 08:36:54 DEBUG BasicClientConnectionManager:164 - Get connection for route {}->http://dummy.restapiexample.com:80
+2020-02-04 08:37:05 DEBUG DefaultClientConnectionOperator:176 - Connecting to dummy.restapiexample.com:80
+2020-02-04 08:37:05 DEBUG RequestAddCookies:122 - CookieSpec selected: ignoreCookies
+2020-02-04 08:37:06 DEBUG RequestAuthCache:76 - Auth cache not set in the context
+2020-02-04 08:37:06 DEBUG RequestTargetAuthentication:79 - Target auth state: UNCHALLENGED
+2020-02-04 08:37:06 DEBUG RequestProxyAuthentication:88 - Proxy auth state: UNCHALLENGED
+2020-02-04 08:37:06 DEBUG DefaultHttpClient:684 - Attempt 1 to execute request
+2020-02-04 08:37:06 DEBUG DefaultClientConnection:276 - Sending request: POST /api/v1/create HTTP/1.1
+2020-02-04 08:37:06 DEBUG wire:72 -  >> "POST /api/v1/create HTTP/1.1[\r][\n]"
+2020-02-04 08:37:06 DEBUG wire:72 -  >> "Accept: */*[\r][\n]"
+2020-02-04 08:37:06 DEBUG wire:72 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2020-02-04 08:37:06 DEBUG wire:72 -  >> "Content-Length: 41[\r][\n]"
+2020-02-04 08:37:06 DEBUG wire:72 -  >> "Host: dummy.restapiexample.com[\r][\n]"
+2020-02-04 08:37:06 DEBUG wire:72 -  >> "Connection: Keep-Alive[\r][\n]"
+2020-02-04 08:37:06 DEBUG wire:72 -  >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_231)[\r][\n]"
+2020-02-04 08:37:06 DEBUG wire:72 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-02-04 08:37:06 DEBUG wire:72 -  >> "[\r][\n]"
+2020-02-04 08:37:06 DEBUG headers:280 - >> POST /api/v1/create HTTP/1.1
+2020-02-04 08:37:06 DEBUG headers:283 - >> Accept: */*
+2020-02-04 08:37:06 DEBUG headers:283 - >> Content-Type: application/json; charset=UTF-8
+2020-02-04 08:37:06 DEBUG headers:283 - >> Content-Length: 41
+2020-02-04 08:37:06 DEBUG headers:283 - >> Host: dummy.restapiexample.com
+2020-02-04 08:37:06 DEBUG headers:283 - >> Connection: Keep-Alive
+2020-02-04 08:37:06 DEBUG headers:283 - >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_231)
+2020-02-04 08:37:06 DEBUG headers:283 - >> Accept-Encoding: gzip,deflate
+2020-02-04 08:37:06 DEBUG wire:86 -  >> "{"name":"test","salary":"123","age":"23"}"
+2020-02-04 08:37:06 DEBUG wire:72 -  << "HTTP/1.1 200 OK[\r][\n]"
+2020-02-04 08:37:06 DEBUG wire:72 -  << "Accept-Ranges: bytes[\r][\n]"
+2020-02-04 08:37:06 DEBUG wire:72 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-02-04 08:37:06 DEBUG wire:72 -  << "Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client[\r][\n]"
+2020-02-04 08:37:06 DEBUG wire:72 -  << "Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==[\r][\n]"
+2020-02-04 08:37:06 DEBUG wire:72 -  << "Referrer-Policy: [\r][\n]"
+2020-02-04 08:37:06 DEBUG wire:72 -  << "Response: 200[\r][\n]"
+2020-02-04 08:37:06 DEBUG wire:72 -  << "X-Ezoic-Cdn: Miss[\r][\n]"
+2020-02-04 08:37:06 DEBUG wire:72 -  << "X-Middleton-Response: 200[\r][\n]"
+2020-02-04 08:37:06 DEBUG wire:72 -  << "X-Shard: 100225193[\r][\n]"
+2020-02-04 08:37:06 DEBUG wire:72 -  << "X-Sol: pub_site[\r][\n]"
+2020-02-04 08:37:06 DEBUG wire:72 -  << "X-Varnish: 19645889[\r][\n]"
+2020-02-04 08:37:06 DEBUG wire:72 -  << "X-Vcache: Miss[\r][\n]"
+2020-02-04 08:37:06 DEBUG wire:72 -  << "Age: 0[\r][\n]"
+2020-02-04 08:37:06 DEBUG wire:72 -  << "Cache-Control: no-store, no-cache, must-revalidate[\r][\n]"
+2020-02-04 08:37:06 DEBUG wire:72 -  << "Content-Type: application/json;charset=utf-8[\r][\n]"
+2020-02-04 08:37:06 DEBUG wire:72 -  << "Date: Tue, 04 Feb 2020 03:07:05 GMT[\r][\n]"
+2020-02-04 08:37:06 DEBUG wire:72 -  << "Expires: Thu, 19 Nov 1981 08:52:00 GMT[\r][\n]"
+2020-02-04 08:37:06 DEBUG wire:72 -  << "Pragma: no-cache[\r][\n]"
+2020-02-04 08:37:06 DEBUG wire:72 -  << "Server: nginx/1.16.0[\r][\n]"
+2020-02-04 08:37:06 DEBUG wire:72 -  << "Set-Cookie: PHPSESSID=7c3e7c5b3d3f562b6d000d68d5159df5; path=/[\r][\n]"
+2020-02-04 08:37:06 DEBUG wire:72 -  << "Set-Cookie: ezoadgid_133674=-1; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 03:37:05 UTC[\r][\n]"
+2020-02-04 08:37:06 DEBUG wire:72 -  << "Set-Cookie: ezoref_133674=; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 05:07:05 UTC[\r][\n]"
+2020-02-04 08:37:06 DEBUG wire:72 -  << "Set-Cookie: ezoab_133674=mod8-c; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 05:07:05 UTC[\r][\n]"
+2020-02-04 08:37:06 DEBUG wire:72 -  << "Set-Cookie: active_template::133674=pub_site.1580785625; Path=/; Domain=restapiexample.com; Expires=Thu, 06 Feb 2020 03:07:05 UTC[\r][\n]"
+2020-02-04 08:37:06 DEBUG wire:72 -  << "Vary: Accept-Encoding,X-APP-JSON[\r][\n]"
+2020-02-04 08:37:06 DEBUG wire:72 -  << "Via: 1.1 varnish (Varnish/6.0)[\r][\n]"
+2020-02-04 08:37:06 DEBUG wire:72 -  << "Content-Length: 77[\r][\n]"
+2020-02-04 08:37:06 DEBUG wire:72 -  << "[\r][\n]"
+2020-02-04 08:37:06 DEBUG DefaultClientConnection:261 - Receiving response: HTTP/1.1 200 OK
+2020-02-04 08:37:06 DEBUG headers:264 - << HTTP/1.1 200 OK
+2020-02-04 08:37:06 DEBUG headers:267 - << Accept-Ranges: bytes
+2020-02-04 08:37:06 DEBUG headers:267 - << Access-Control-Allow-Origin: *
+2020-02-04 08:37:06 DEBUG headers:267 - << Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client
+2020-02-04 08:37:06 DEBUG headers:267 - << Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+2020-02-04 08:37:06 DEBUG headers:267 - << Referrer-Policy: 
+2020-02-04 08:37:06 DEBUG headers:267 - << Response: 200
+2020-02-04 08:37:06 DEBUG headers:267 - << X-Ezoic-Cdn: Miss
+2020-02-04 08:37:06 DEBUG headers:267 - << X-Middleton-Response: 200
+2020-02-04 08:37:06 DEBUG headers:267 - << X-Shard: 100225193
+2020-02-04 08:37:06 DEBUG headers:267 - << X-Sol: pub_site
+2020-02-04 08:37:06 DEBUG headers:267 - << X-Varnish: 19645889
+2020-02-04 08:37:06 DEBUG headers:267 - << X-Vcache: Miss
+2020-02-04 08:37:06 DEBUG headers:267 - << Age: 0
+2020-02-04 08:37:06 DEBUG headers:267 - << Cache-Control: no-store, no-cache, must-revalidate
+2020-02-04 08:37:06 DEBUG headers:267 - << Content-Type: application/json;charset=utf-8
+2020-02-04 08:37:06 DEBUG headers:267 - << Date: Tue, 04 Feb 2020 03:07:05 GMT
+2020-02-04 08:37:06 DEBUG headers:267 - << Expires: Thu, 19 Nov 1981 08:52:00 GMT
+2020-02-04 08:37:06 DEBUG headers:267 - << Pragma: no-cache
+2020-02-04 08:37:06 DEBUG headers:267 - << Server: nginx/1.16.0
+2020-02-04 08:37:06 DEBUG headers:267 - << Set-Cookie: PHPSESSID=7c3e7c5b3d3f562b6d000d68d5159df5; path=/
+2020-02-04 08:37:06 DEBUG headers:267 - << Set-Cookie: ezoadgid_133674=-1; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 03:37:05 UTC
+2020-02-04 08:37:06 DEBUG headers:267 - << Set-Cookie: ezoref_133674=; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 05:07:05 UTC
+2020-02-04 08:37:06 DEBUG headers:267 - << Set-Cookie: ezoab_133674=mod8-c; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 05:07:05 UTC
+2020-02-04 08:37:06 DEBUG headers:267 - << Set-Cookie: active_template::133674=pub_site.1580785625; Path=/; Domain=restapiexample.com; Expires=Thu, 06 Feb 2020 03:07:05 UTC
+2020-02-04 08:37:06 DEBUG headers:267 - << Vary: Accept-Encoding,X-APP-JSON
+2020-02-04 08:37:06 DEBUG headers:267 - << Via: 1.1 varnish (Varnish/6.0)
+2020-02-04 08:37:06 DEBUG headers:267 - << Content-Length: 77
+2020-02-04 08:37:06 DEBUG DefaultHttpClient:511 - Connection can be kept alive indefinitely
+2020-02-04 08:37:06 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json;charset=utf-8
+2020-02-04 08:37:06 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-02-04 08:37:06 DEBUG wire:86 -  << "{"status":"success","data":{"name":"test","salary":"123","age":"23","id":32}}"
+2020-02-04 08:37:06 DEBUG BasicClientConnectionManager:203 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@486be205
+2020-02-04 08:37:06 DEBUG BasicClientConnectionManager:228 - Connection can be kept alive indefinitely
+2020-02-04 08:37:07 DEBUG BasicClientConnectionManager:164 - Get connection for route {}->http://dummy.restapiexample.com:80
+2020-02-04 08:37:07 DEBUG DefaultClientConnectionOperator:176 - Connecting to dummy.restapiexample.com:80
+2020-02-04 08:37:07 DEBUG RequestAddCookies:122 - CookieSpec selected: ignoreCookies
+2020-02-04 08:37:07 DEBUG RequestAuthCache:76 - Auth cache not set in the context
+2020-02-04 08:37:07 DEBUG RequestTargetAuthentication:79 - Target auth state: UNCHALLENGED
+2020-02-04 08:37:07 DEBUG RequestProxyAuthentication:88 - Proxy auth state: UNCHALLENGED
+2020-02-04 08:37:07 DEBUG DefaultHttpClient:684 - Attempt 1 to execute request
+2020-02-04 08:37:07 DEBUG DefaultClientConnection:276 - Sending request: POST /api/v1/create HTTP/1.1
+2020-02-04 08:37:07 DEBUG wire:72 -  >> "POST /api/v1/create HTTP/1.1[\r][\n]"
+2020-02-04 08:37:07 DEBUG wire:72 -  >> "Accept: */*[\r][\n]"
+2020-02-04 08:37:07 DEBUG wire:72 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2020-02-04 08:37:07 DEBUG wire:72 -  >> "Content-Length: 37[\r][\n]"
+2020-02-04 08:37:07 DEBUG wire:72 -  >> "Host: dummy.restapiexample.com[\r][\n]"
+2020-02-04 08:37:07 DEBUG wire:72 -  >> "Connection: Keep-Alive[\r][\n]"
+2020-02-04 08:37:07 DEBUG wire:72 -  >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_231)[\r][\n]"
+2020-02-04 08:37:07 DEBUG wire:72 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-02-04 08:37:07 DEBUG wire:72 -  >> "[\r][\n]"
+2020-02-04 08:37:07 DEBUG headers:280 - >> POST /api/v1/create HTTP/1.1
+2020-02-04 08:37:07 DEBUG headers:283 - >> Accept: */*
+2020-02-04 08:37:07 DEBUG headers:283 - >> Content-Type: application/json; charset=UTF-8
+2020-02-04 08:37:07 DEBUG headers:283 - >> Content-Length: 37
+2020-02-04 08:37:07 DEBUG headers:283 - >> Host: dummy.restapiexample.com
+2020-02-04 08:37:07 DEBUG headers:283 - >> Connection: Keep-Alive
+2020-02-04 08:37:07 DEBUG headers:283 - >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_231)
+2020-02-04 08:37:07 DEBUG headers:283 - >> Accept-Encoding: gzip,deflate
+2020-02-04 08:37:07 DEBUG wire:86 -  >> "{"name":"","salary":"123","age":"23"}"
+2020-02-04 08:37:08 DEBUG wire:72 -  << "HTTP/1.1 200 OK[\r][\n]"
+2020-02-04 08:37:08 DEBUG wire:72 -  << "Accept-Ranges: bytes[\r][\n]"
+2020-02-04 08:37:08 DEBUG wire:72 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-02-04 08:37:08 DEBUG wire:72 -  << "Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client[\r][\n]"
+2020-02-04 08:37:08 DEBUG wire:72 -  << "Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==[\r][\n]"
+2020-02-04 08:37:08 DEBUG wire:72 -  << "Referrer-Policy: [\r][\n]"
+2020-02-04 08:37:08 DEBUG wire:72 -  << "Response: 200[\r][\n]"
+2020-02-04 08:37:08 DEBUG wire:72 -  << "X-Ezoic-Cdn: Miss[\r][\n]"
+2020-02-04 08:37:08 DEBUG wire:72 -  << "X-Middleton-Response: 200[\r][\n]"
+2020-02-04 08:37:08 DEBUG wire:72 -  << "X-Shard: 100225193[\r][\n]"
+2020-02-04 08:37:08 DEBUG wire:72 -  << "X-Sol: pub_site[\r][\n]"
+2020-02-04 08:37:08 DEBUG wire:72 -  << "X-Varnish: 1881617[\r][\n]"
+2020-02-04 08:37:08 DEBUG wire:72 -  << "X-Vcache: Miss[\r][\n]"
+2020-02-04 08:37:08 DEBUG wire:72 -  << "Age: 0[\r][\n]"
+2020-02-04 08:37:08 DEBUG wire:72 -  << "Cache-Control: no-store, no-cache, must-revalidate[\r][\n]"
+2020-02-04 08:37:08 DEBUG wire:72 -  << "Content-Type: application/json;charset=utf-8[\r][\n]"
+2020-02-04 08:37:08 DEBUG wire:72 -  << "Date: Tue, 04 Feb 2020 03:07:07 GMT[\r][\n]"
+2020-02-04 08:37:08 DEBUG wire:72 -  << "Expires: Thu, 19 Nov 1981 08:52:00 GMT[\r][\n]"
+2020-02-04 08:37:08 DEBUG wire:72 -  << "Pragma: no-cache[\r][\n]"
+2020-02-04 08:37:08 DEBUG wire:72 -  << "Server: nginx/1.16.0[\r][\n]"
+2020-02-04 08:37:08 DEBUG wire:72 -  << "Set-Cookie: PHPSESSID=856e0d02e4188e26591d6188c2d8c533; path=/[\r][\n]"
+2020-02-04 08:37:08 DEBUG wire:72 -  << "Set-Cookie: ezoadgid_133674=-1; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 03:37:06 UTC[\r][\n]"
+2020-02-04 08:37:08 DEBUG wire:72 -  << "Set-Cookie: ezoref_133674=; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 05:07:06 UTC[\r][\n]"
+2020-02-04 08:37:08 DEBUG wire:72 -  << "Set-Cookie: ezoab_133674=mod71-c; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 05:07:06 UTC[\r][\n]"
+2020-02-04 08:37:08 DEBUG wire:72 -  << "Set-Cookie: active_template::133674=pub_site.1580785626; Path=/; Domain=restapiexample.com; Expires=Thu, 06 Feb 2020 03:07:06 UTC[\r][\n]"
+2020-02-04 08:37:08 DEBUG wire:72 -  << "Vary: Accept-Encoding,X-APP-JSON[\r][\n]"
+2020-02-04 08:37:08 DEBUG wire:72 -  << "Via: 1.1 varnish (Varnish/6.0)[\r][\n]"
+2020-02-04 08:37:08 DEBUG wire:72 -  << "Content-Length: 73[\r][\n]"
+2020-02-04 08:37:08 DEBUG wire:72 -  << "[\r][\n]"
+2020-02-04 08:37:08 DEBUG DefaultClientConnection:261 - Receiving response: HTTP/1.1 200 OK
+2020-02-04 08:37:08 DEBUG headers:264 - << HTTP/1.1 200 OK
+2020-02-04 08:37:08 DEBUG headers:267 - << Accept-Ranges: bytes
+2020-02-04 08:37:08 DEBUG headers:267 - << Access-Control-Allow-Origin: *
+2020-02-04 08:37:08 DEBUG headers:267 - << Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client
+2020-02-04 08:37:08 DEBUG headers:267 - << Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+2020-02-04 08:37:08 DEBUG headers:267 - << Referrer-Policy: 
+2020-02-04 08:37:08 DEBUG headers:267 - << Response: 200
+2020-02-04 08:37:08 DEBUG headers:267 - << X-Ezoic-Cdn: Miss
+2020-02-04 08:37:08 DEBUG headers:267 - << X-Middleton-Response: 200
+2020-02-04 08:37:08 DEBUG headers:267 - << X-Shard: 100225193
+2020-02-04 08:37:08 DEBUG headers:267 - << X-Sol: pub_site
+2020-02-04 08:37:08 DEBUG headers:267 - << X-Varnish: 1881617
+2020-02-04 08:37:08 DEBUG headers:267 - << X-Vcache: Miss
+2020-02-04 08:37:08 DEBUG headers:267 - << Age: 0
+2020-02-04 08:37:08 DEBUG headers:267 - << Cache-Control: no-store, no-cache, must-revalidate
+2020-02-04 08:37:08 DEBUG headers:267 - << Content-Type: application/json;charset=utf-8
+2020-02-04 08:37:08 DEBUG headers:267 - << Date: Tue, 04 Feb 2020 03:07:07 GMT
+2020-02-04 08:37:08 DEBUG headers:267 - << Expires: Thu, 19 Nov 1981 08:52:00 GMT
+2020-02-04 08:37:08 DEBUG headers:267 - << Pragma: no-cache
+2020-02-04 08:37:08 DEBUG headers:267 - << Server: nginx/1.16.0
+2020-02-04 08:37:08 DEBUG headers:267 - << Set-Cookie: PHPSESSID=856e0d02e4188e26591d6188c2d8c533; path=/
+2020-02-04 08:37:08 DEBUG headers:267 - << Set-Cookie: ezoadgid_133674=-1; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 03:37:06 UTC
+2020-02-04 08:37:08 DEBUG headers:267 - << Set-Cookie: ezoref_133674=; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 05:07:06 UTC
+2020-02-04 08:37:08 DEBUG headers:267 - << Set-Cookie: ezoab_133674=mod71-c; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 05:07:06 UTC
+2020-02-04 08:37:08 DEBUG headers:267 - << Set-Cookie: active_template::133674=pub_site.1580785626; Path=/; Domain=restapiexample.com; Expires=Thu, 06 Feb 2020 03:07:06 UTC
+2020-02-04 08:37:08 DEBUG headers:267 - << Vary: Accept-Encoding,X-APP-JSON
+2020-02-04 08:37:08 DEBUG headers:267 - << Via: 1.1 varnish (Varnish/6.0)
+2020-02-04 08:37:08 DEBUG headers:267 - << Content-Length: 73
+2020-02-04 08:37:08 DEBUG DefaultHttpClient:511 - Connection can be kept alive indefinitely
+2020-02-04 08:37:08 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json;charset=utf-8
+2020-02-04 08:37:08 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-02-04 08:37:08 DEBUG wire:86 -  << "{"status":"success","data":{"name":"","salary":"123","age":"23","id":36}}"
+2020-02-04 08:37:08 DEBUG BasicClientConnectionManager:203 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@5f8890c2
+2020-02-04 08:37:08 DEBUG BasicClientConnectionManager:228 - Connection can be kept alive indefinitely
+2020-02-04 08:37:08 DEBUG cache:45 - Couldn't find template in cache for "index.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 08:37:08 DEBUG cache:45 - TemplateLoader.findTemplateSource("index_en.ftl"): Not found
+2020-02-04 08:37:08 DEBUG cache:45 - TemplateLoader.findTemplateSource("index.ftl"): Found
+2020-02-04 08:37:08 DEBUG cache:45 - Loading template for "index.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/index.ftl"
+2020-02-04 08:37:08 DEBUG cache:45 - Couldn't find template in cache for "head.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 08:37:08 DEBUG cache:45 - TemplateLoader.findTemplateSource("head_en.ftl"): Not found
+2020-02-04 08:37:08 DEBUG cache:45 - TemplateLoader.findTemplateSource("head.ftl"): Found
+2020-02-04 08:37:08 DEBUG cache:45 - Loading template for "head.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/head.ftl"
+2020-02-04 08:37:08 DEBUG cache:45 - Couldn't find template in cache for "nav.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 08:37:08 DEBUG cache:45 - TemplateLoader.findTemplateSource("nav_en.ftl"): Not found
+2020-02-04 08:37:08 DEBUG cache:45 - TemplateLoader.findTemplateSource("nav.ftl"): Found
+2020-02-04 08:37:08 DEBUG cache:45 - Loading template for "nav.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/nav.ftl"
+2020-02-04 08:37:08 DEBUG cache:45 - Couldn't find template in cache for "test-view/test-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 08:37:08 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/test-view_en.ftl"): Not found
+2020-02-04 08:37:08 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/test-view.ftl"): Found
+2020-02-04 08:37:08 DEBUG cache:45 - Loading template for "test-view/test-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view.ftl"
+2020-02-04 08:37:08 DEBUG cache:45 - Couldn't find template in cache for "test-view/test-view-charts.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 08:37:08 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/test-view-charts_en.ftl"): Not found
+2020-02-04 08:37:08 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/test-view-charts.ftl"): Found
+2020-02-04 08:37:08 DEBUG cache:45 - Loading template for "test-view/test-view-charts.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view-charts.ftl"
+2020-02-04 08:37:08 DEBUG cache:45 - Couldn't find template in cache for "test-view/standard.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 08:37:08 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/standard_en.ftl"): Not found
+2020-02-04 08:37:08 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/standard.ftl"): Found
+2020-02-04 08:37:08 DEBUG cache:45 - Loading template for "test-view/standard.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/test-view/standard.ftl"
+2020-02-04 08:37:08 DEBUG cache:45 - Couldn't find template in cache for "category-view/category-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 08:37:08 DEBUG cache:45 - TemplateLoader.findTemplateSource("category-view/category-view_en.ftl"): Not found
+2020-02-04 08:37:08 DEBUG cache:45 - TemplateLoader.findTemplateSource("category-view/category-view.ftl"): Found
+2020-02-04 08:37:08 DEBUG cache:45 - Loading template for "category-view/category-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/category-view/category-view.ftl"
+2020-02-04 08:37:08 DEBUG cache:45 - Couldn't find template in cache for "author-view/author-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 08:37:08 DEBUG cache:45 - TemplateLoader.findTemplateSource("author-view/author-view_en.ftl"): Not found
+2020-02-04 08:37:08 DEBUG cache:45 - TemplateLoader.findTemplateSource("author-view/author-view.ftl"): Found
+2020-02-04 08:37:08 DEBUG cache:45 - Loading template for "author-view/author-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/author-view/author-view.ftl"
+2020-02-04 08:37:08 DEBUG cache:45 - Couldn't find template in cache for "exception-view/exception-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 08:37:08 DEBUG cache:45 - TemplateLoader.findTemplateSource("exception-view/exception-view_en.ftl"): Not found
+2020-02-04 08:37:08 DEBUG cache:45 - TemplateLoader.findTemplateSource("exception-view/exception-view.ftl"): Found
+2020-02-04 08:37:08 DEBUG cache:45 - Loading template for "exception-view/exception-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/exception-view/exception-view.ftl"
+2020-02-04 08:37:08 DEBUG cache:45 - Couldn't find template in cache for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 08:37:08 DEBUG cache:45 - TemplateLoader.findTemplateSource("dashboard-view/dashboard-view_en.ftl"): Not found
+2020-02-04 08:37:08 DEBUG cache:45 - TemplateLoader.findTemplateSource("dashboard-view/dashboard-view.ftl"): Found
+2020-02-04 08:37:08 DEBUG cache:45 - Loading template for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/dashboard-view/dashboard-view.ftl"
+2020-02-04 08:37:08 DEBUG cache:45 - Couldn't find template in cache for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 08:37:08 DEBUG cache:45 - TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view_en.ftl"): Not found
+2020-02-04 08:37:08 DEBUG cache:45 - TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view.ftl"): Found
+2020-02-04 08:37:08 DEBUG cache:45 - Loading template for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/logs-view/testrunner-logs-view.ftl"
+2020-02-04 08:53:52 DEBUG BasicClientConnectionManager:164 - Get connection for route {}->http://dummy.restapiexample.com:80
+2020-02-04 08:53:54 DEBUG DefaultClientConnectionOperator:176 - Connecting to dummy.restapiexample.com:80
+2020-02-04 08:53:54 DEBUG RequestAddCookies:122 - CookieSpec selected: ignoreCookies
+2020-02-04 08:53:54 DEBUG RequestAuthCache:76 - Auth cache not set in the context
+2020-02-04 08:53:54 DEBUG RequestTargetAuthentication:79 - Target auth state: UNCHALLENGED
+2020-02-04 08:53:54 DEBUG RequestProxyAuthentication:88 - Proxy auth state: UNCHALLENGED
+2020-02-04 08:53:54 DEBUG DefaultHttpClient:684 - Attempt 1 to execute request
+2020-02-04 08:53:54 DEBUG DefaultClientConnection:276 - Sending request: POST /api/v1/create HTTP/1.1
+2020-02-04 08:53:54 DEBUG wire:72 -  >> "POST /api/v1/create HTTP/1.1[\r][\n]"
+2020-02-04 08:53:54 DEBUG wire:72 -  >> "Accept: */*[\r][\n]"
+2020-02-04 08:53:54 DEBUG wire:72 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2020-02-04 08:53:54 DEBUG wire:72 -  >> "Content-Length: 41[\r][\n]"
+2020-02-04 08:53:54 DEBUG wire:72 -  >> "Host: dummy.restapiexample.com[\r][\n]"
+2020-02-04 08:53:54 DEBUG wire:72 -  >> "Connection: Keep-Alive[\r][\n]"
+2020-02-04 08:53:54 DEBUG wire:72 -  >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_231)[\r][\n]"
+2020-02-04 08:53:54 DEBUG wire:72 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-02-04 08:53:54 DEBUG wire:72 -  >> "[\r][\n]"
+2020-02-04 08:53:54 DEBUG headers:280 - >> POST /api/v1/create HTTP/1.1
+2020-02-04 08:53:54 DEBUG headers:283 - >> Accept: */*
+2020-02-04 08:53:54 DEBUG headers:283 - >> Content-Type: application/json; charset=UTF-8
+2020-02-04 08:53:54 DEBUG headers:283 - >> Content-Length: 41
+2020-02-04 08:53:54 DEBUG headers:283 - >> Host: dummy.restapiexample.com
+2020-02-04 08:53:54 DEBUG headers:283 - >> Connection: Keep-Alive
+2020-02-04 08:53:54 DEBUG headers:283 - >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_231)
+2020-02-04 08:53:54 DEBUG headers:283 - >> Accept-Encoding: gzip,deflate
+2020-02-04 08:53:54 DEBUG wire:86 -  >> "{"name":"test","salary":"123","age":"23"}"
+2020-02-04 08:53:54 DEBUG wire:72 -  << "HTTP/1.1 200 OK[\r][\n]"
+2020-02-04 08:53:54 DEBUG wire:72 -  << "Accept-Ranges: bytes[\r][\n]"
+2020-02-04 08:53:54 DEBUG wire:72 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-02-04 08:53:54 DEBUG wire:72 -  << "Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client[\r][\n]"
+2020-02-04 08:53:54 DEBUG wire:72 -  << "Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==[\r][\n]"
+2020-02-04 08:53:54 DEBUG wire:72 -  << "Referrer-Policy: [\r][\n]"
+2020-02-04 08:53:54 DEBUG wire:72 -  << "Response: 200[\r][\n]"
+2020-02-04 08:53:54 DEBUG wire:72 -  << "X-Ezoic-Cdn: Miss[\r][\n]"
+2020-02-04 08:53:54 DEBUG wire:72 -  << "X-Middleton-Response: 200[\r][\n]"
+2020-02-04 08:53:54 DEBUG wire:72 -  << "X-Shard: 100225193[\r][\n]"
+2020-02-04 08:53:54 DEBUG wire:72 -  << "X-Sol: pub_site[\r][\n]"
+2020-02-04 08:53:54 DEBUG wire:72 -  << "X-Varnish: 8275961[\r][\n]"
+2020-02-04 08:53:54 DEBUG wire:72 -  << "X-Vcache: Miss[\r][\n]"
+2020-02-04 08:53:54 DEBUG wire:72 -  << "Age: 0[\r][\n]"
+2020-02-04 08:53:54 DEBUG wire:72 -  << "Cache-Control: no-store, no-cache, must-revalidate[\r][\n]"
+2020-02-04 08:53:54 DEBUG wire:72 -  << "Content-Type: application/json;charset=utf-8[\r][\n]"
+2020-02-04 08:53:54 DEBUG wire:72 -  << "Date: Tue, 04 Feb 2020 03:23:53 GMT[\r][\n]"
+2020-02-04 08:53:54 DEBUG wire:72 -  << "Expires: Thu, 19 Nov 1981 08:52:00 GMT[\r][\n]"
+2020-02-04 08:53:54 DEBUG wire:72 -  << "Pragma: no-cache[\r][\n]"
+2020-02-04 08:53:54 DEBUG wire:72 -  << "Server: nginx/1.16.0[\r][\n]"
+2020-02-04 08:53:54 DEBUG wire:72 -  << "Set-Cookie: PHPSESSID=578c56d4efa9f3f183a3ff123ee1702d; path=/[\r][\n]"
+2020-02-04 08:53:54 DEBUG wire:72 -  << "Set-Cookie: ezoadgid_133674=-1; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 03:53:53 UTC[\r][\n]"
+2020-02-04 08:53:54 DEBUG wire:72 -  << "Set-Cookie: ezoref_133674=; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 05:23:53 UTC[\r][\n]"
+2020-02-04 08:53:54 DEBUG wire:72 -  << "Set-Cookie: ezoab_133674=mod9-c; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 05:23:53 UTC[\r][\n]"
+2020-02-04 08:53:54 DEBUG wire:72 -  << "Set-Cookie: active_template::133674=pub_site.1580786633; Path=/; Domain=restapiexample.com; Expires=Thu, 06 Feb 2020 03:23:53 UTC[\r][\n]"
+2020-02-04 08:53:54 DEBUG wire:72 -  << "Vary: Accept-Encoding,X-APP-JSON[\r][\n]"
+2020-02-04 08:53:54 DEBUG wire:72 -  << "Via: 1.1 varnish (Varnish/6.0)[\r][\n]"
+2020-02-04 08:53:54 DEBUG wire:72 -  << "Content-Length: 77[\r][\n]"
+2020-02-04 08:53:54 DEBUG wire:72 -  << "[\r][\n]"
+2020-02-04 08:53:54 DEBUG DefaultClientConnection:261 - Receiving response: HTTP/1.1 200 OK
+2020-02-04 08:53:54 DEBUG headers:264 - << HTTP/1.1 200 OK
+2020-02-04 08:53:54 DEBUG headers:267 - << Accept-Ranges: bytes
+2020-02-04 08:53:54 DEBUG headers:267 - << Access-Control-Allow-Origin: *
+2020-02-04 08:53:54 DEBUG headers:267 - << Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client
+2020-02-04 08:53:54 DEBUG headers:267 - << Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+2020-02-04 08:53:54 DEBUG headers:267 - << Referrer-Policy: 
+2020-02-04 08:53:54 DEBUG headers:267 - << Response: 200
+2020-02-04 08:53:54 DEBUG headers:267 - << X-Ezoic-Cdn: Miss
+2020-02-04 08:53:54 DEBUG headers:267 - << X-Middleton-Response: 200
+2020-02-04 08:53:54 DEBUG headers:267 - << X-Shard: 100225193
+2020-02-04 08:53:54 DEBUG headers:267 - << X-Sol: pub_site
+2020-02-04 08:53:54 DEBUG headers:267 - << X-Varnish: 8275961
+2020-02-04 08:53:54 DEBUG headers:267 - << X-Vcache: Miss
+2020-02-04 08:53:54 DEBUG headers:267 - << Age: 0
+2020-02-04 08:53:54 DEBUG headers:267 - << Cache-Control: no-store, no-cache, must-revalidate
+2020-02-04 08:53:54 DEBUG headers:267 - << Content-Type: application/json;charset=utf-8
+2020-02-04 08:53:54 DEBUG headers:267 - << Date: Tue, 04 Feb 2020 03:23:53 GMT
+2020-02-04 08:53:54 DEBUG headers:267 - << Expires: Thu, 19 Nov 1981 08:52:00 GMT
+2020-02-04 08:53:54 DEBUG headers:267 - << Pragma: no-cache
+2020-02-04 08:53:54 DEBUG headers:267 - << Server: nginx/1.16.0
+2020-02-04 08:53:54 DEBUG headers:267 - << Set-Cookie: PHPSESSID=578c56d4efa9f3f183a3ff123ee1702d; path=/
+2020-02-04 08:53:54 DEBUG headers:267 - << Set-Cookie: ezoadgid_133674=-1; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 03:53:53 UTC
+2020-02-04 08:53:54 DEBUG headers:267 - << Set-Cookie: ezoref_133674=; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 05:23:53 UTC
+2020-02-04 08:53:54 DEBUG headers:267 - << Set-Cookie: ezoab_133674=mod9-c; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 05:23:53 UTC
+2020-02-04 08:53:54 DEBUG headers:267 - << Set-Cookie: active_template::133674=pub_site.1580786633; Path=/; Domain=restapiexample.com; Expires=Thu, 06 Feb 2020 03:23:53 UTC
+2020-02-04 08:53:54 DEBUG headers:267 - << Vary: Accept-Encoding,X-APP-JSON
+2020-02-04 08:53:54 DEBUG headers:267 - << Via: 1.1 varnish (Varnish/6.0)
+2020-02-04 08:53:54 DEBUG headers:267 - << Content-Length: 77
+2020-02-04 08:53:54 DEBUG DefaultHttpClient:511 - Connection can be kept alive indefinitely
+2020-02-04 08:53:54 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json;charset=utf-8
+2020-02-04 08:53:54 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-02-04 08:53:54 DEBUG wire:86 -  << "{"status":"success","data":{"name":"test","salary":"123","age":"23","id":95}}"
+2020-02-04 08:53:54 DEBUG BasicClientConnectionManager:203 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@7fe083b1
+2020-02-04 08:53:54 DEBUG BasicClientConnectionManager:228 - Connection can be kept alive indefinitely
+2020-02-04 08:53:55 DEBUG BasicClientConnectionManager:164 - Get connection for route {}->http://dummy.restapiexample.com:80
+2020-02-04 08:53:55 DEBUG DefaultClientConnectionOperator:176 - Connecting to dummy.restapiexample.com:80
+2020-02-04 08:53:55 DEBUG RequestAddCookies:122 - CookieSpec selected: ignoreCookies
+2020-02-04 08:53:55 DEBUG RequestAuthCache:76 - Auth cache not set in the context
+2020-02-04 08:53:55 DEBUG RequestTargetAuthentication:79 - Target auth state: UNCHALLENGED
+2020-02-04 08:53:55 DEBUG RequestProxyAuthentication:88 - Proxy auth state: UNCHALLENGED
+2020-02-04 08:53:55 DEBUG DefaultHttpClient:684 - Attempt 1 to execute request
+2020-02-04 08:53:55 DEBUG DefaultClientConnection:276 - Sending request: POST /api/v1/create HTTP/1.1
+2020-02-04 08:53:55 DEBUG wire:72 -  >> "POST /api/v1/create HTTP/1.1[\r][\n]"
+2020-02-04 08:53:55 DEBUG wire:72 -  >> "Accept: */*[\r][\n]"
+2020-02-04 08:53:55 DEBUG wire:72 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2020-02-04 08:53:55 DEBUG wire:72 -  >> "Content-Length: 37[\r][\n]"
+2020-02-04 08:53:55 DEBUG wire:72 -  >> "Host: dummy.restapiexample.com[\r][\n]"
+2020-02-04 08:53:55 DEBUG wire:72 -  >> "Connection: Keep-Alive[\r][\n]"
+2020-02-04 08:53:55 DEBUG wire:72 -  >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_231)[\r][\n]"
+2020-02-04 08:53:55 DEBUG wire:72 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-02-04 08:53:55 DEBUG wire:72 -  >> "[\r][\n]"
+2020-02-04 08:53:55 DEBUG headers:280 - >> POST /api/v1/create HTTP/1.1
+2020-02-04 08:53:55 DEBUG headers:283 - >> Accept: */*
+2020-02-04 08:53:55 DEBUG headers:283 - >> Content-Type: application/json; charset=UTF-8
+2020-02-04 08:53:55 DEBUG headers:283 - >> Content-Length: 37
+2020-02-04 08:53:55 DEBUG headers:283 - >> Host: dummy.restapiexample.com
+2020-02-04 08:53:55 DEBUG headers:283 - >> Connection: Keep-Alive
+2020-02-04 08:53:55 DEBUG headers:283 - >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_231)
+2020-02-04 08:53:55 DEBUG headers:283 - >> Accept-Encoding: gzip,deflate
+2020-02-04 08:53:55 DEBUG wire:86 -  >> "{"name":"","salary":"123","age":"23"}"
+2020-02-04 08:53:56 DEBUG wire:72 -  << "HTTP/1.1 200 OK[\r][\n]"
+2020-02-04 08:53:56 DEBUG wire:72 -  << "Accept-Ranges: bytes[\r][\n]"
+2020-02-04 08:53:56 DEBUG wire:72 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-02-04 08:53:56 DEBUG wire:72 -  << "Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client[\r][\n]"
+2020-02-04 08:53:56 DEBUG wire:72 -  << "Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==[\r][\n]"
+2020-02-04 08:53:56 DEBUG wire:72 -  << "Referrer-Policy: [\r][\n]"
+2020-02-04 08:53:56 DEBUG wire:72 -  << "Response: 200[\r][\n]"
+2020-02-04 08:53:56 DEBUG wire:72 -  << "X-Ezoic-Cdn: Miss[\r][\n]"
+2020-02-04 08:53:56 DEBUG wire:72 -  << "X-Middleton-Response: 200[\r][\n]"
+2020-02-04 08:53:56 DEBUG wire:72 -  << "X-Shard: 100225193[\r][\n]"
+2020-02-04 08:53:56 DEBUG wire:72 -  << "X-Sol: pub_site[\r][\n]"
+2020-02-04 08:53:56 DEBUG wire:72 -  << "X-Varnish: 5355848[\r][\n]"
+2020-02-04 08:53:56 DEBUG wire:72 -  << "X-Vcache: Miss[\r][\n]"
+2020-02-04 08:53:56 DEBUG wire:72 -  << "Age: 0[\r][\n]"
+2020-02-04 08:53:56 DEBUG wire:72 -  << "Cache-Control: no-store, no-cache, must-revalidate[\r][\n]"
+2020-02-04 08:53:56 DEBUG wire:72 -  << "Content-Type: application/json;charset=utf-8[\r][\n]"
+2020-02-04 08:53:56 DEBUG wire:72 -  << "Date: Tue, 04 Feb 2020 03:23:55 GMT[\r][\n]"
+2020-02-04 08:53:56 DEBUG wire:72 -  << "Expires: Thu, 19 Nov 1981 08:52:00 GMT[\r][\n]"
+2020-02-04 08:53:56 DEBUG wire:72 -  << "Pragma: no-cache[\r][\n]"
+2020-02-04 08:53:56 DEBUG wire:72 -  << "Server: nginx/1.16.0[\r][\n]"
+2020-02-04 08:53:56 DEBUG wire:72 -  << "Set-Cookie: PHPSESSID=68308cbad9f2744958529184c367c9f4; path=/[\r][\n]"
+2020-02-04 08:53:56 DEBUG wire:72 -  << "Set-Cookie: ezoadgid_133674=-1; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 03:53:54 UTC[\r][\n]"
+2020-02-04 08:53:56 DEBUG wire:72 -  << "Set-Cookie: ezoref_133674=; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 05:23:54 UTC[\r][\n]"
+2020-02-04 08:53:56 DEBUG wire:72 -  << "Set-Cookie: ezoab_133674=mod70; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 05:23:54 UTC[\r][\n]"
+2020-02-04 08:53:56 DEBUG wire:72 -  << "Set-Cookie: active_template::133674=pub_site.1580786634; Path=/; Domain=restapiexample.com; Expires=Thu, 06 Feb 2020 03:23:54 UTC[\r][\n]"
+2020-02-04 08:53:56 DEBUG wire:72 -  << "Vary: Accept-Encoding,X-APP-JSON[\r][\n]"
+2020-02-04 08:53:56 DEBUG wire:72 -  << "Via: 1.1 varnish (Varnish/6.0)[\r][\n]"
+2020-02-04 08:53:56 DEBUG wire:72 -  << "Content-Length: 73[\r][\n]"
+2020-02-04 08:53:56 DEBUG wire:72 -  << "[\r][\n]"
+2020-02-04 08:53:56 DEBUG DefaultClientConnection:261 - Receiving response: HTTP/1.1 200 OK
+2020-02-04 08:53:56 DEBUG headers:264 - << HTTP/1.1 200 OK
+2020-02-04 08:53:56 DEBUG headers:267 - << Accept-Ranges: bytes
+2020-02-04 08:53:56 DEBUG headers:267 - << Access-Control-Allow-Origin: *
+2020-02-04 08:53:56 DEBUG headers:267 - << Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client
+2020-02-04 08:53:56 DEBUG headers:267 - << Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+2020-02-04 08:53:56 DEBUG headers:267 - << Referrer-Policy: 
+2020-02-04 08:53:56 DEBUG headers:267 - << Response: 200
+2020-02-04 08:53:56 DEBUG headers:267 - << X-Ezoic-Cdn: Miss
+2020-02-04 08:53:56 DEBUG headers:267 - << X-Middleton-Response: 200
+2020-02-04 08:53:56 DEBUG headers:267 - << X-Shard: 100225193
+2020-02-04 08:53:56 DEBUG headers:267 - << X-Sol: pub_site
+2020-02-04 08:53:56 DEBUG headers:267 - << X-Varnish: 5355848
+2020-02-04 08:53:56 DEBUG headers:267 - << X-Vcache: Miss
+2020-02-04 08:53:56 DEBUG headers:267 - << Age: 0
+2020-02-04 08:53:56 DEBUG headers:267 - << Cache-Control: no-store, no-cache, must-revalidate
+2020-02-04 08:53:56 DEBUG headers:267 - << Content-Type: application/json;charset=utf-8
+2020-02-04 08:53:56 DEBUG headers:267 - << Date: Tue, 04 Feb 2020 03:23:55 GMT
+2020-02-04 08:53:56 DEBUG headers:267 - << Expires: Thu, 19 Nov 1981 08:52:00 GMT
+2020-02-04 08:53:56 DEBUG headers:267 - << Pragma: no-cache
+2020-02-04 08:53:56 DEBUG headers:267 - << Server: nginx/1.16.0
+2020-02-04 08:53:56 DEBUG headers:267 - << Set-Cookie: PHPSESSID=68308cbad9f2744958529184c367c9f4; path=/
+2020-02-04 08:53:56 DEBUG headers:267 - << Set-Cookie: ezoadgid_133674=-1; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 03:53:54 UTC
+2020-02-04 08:53:56 DEBUG headers:267 - << Set-Cookie: ezoref_133674=; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 05:23:54 UTC
+2020-02-04 08:53:56 DEBUG headers:267 - << Set-Cookie: ezoab_133674=mod70; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 05:23:54 UTC
+2020-02-04 08:53:56 DEBUG headers:267 - << Set-Cookie: active_template::133674=pub_site.1580786634; Path=/; Domain=restapiexample.com; Expires=Thu, 06 Feb 2020 03:23:54 UTC
+2020-02-04 08:53:56 DEBUG headers:267 - << Vary: Accept-Encoding,X-APP-JSON
+2020-02-04 08:53:56 DEBUG headers:267 - << Via: 1.1 varnish (Varnish/6.0)
+2020-02-04 08:53:56 DEBUG headers:267 - << Content-Length: 73
+2020-02-04 08:53:56 DEBUG DefaultHttpClient:511 - Connection can be kept alive indefinitely
+2020-02-04 08:53:56 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json;charset=utf-8
+2020-02-04 08:53:56 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-02-04 08:53:56 DEBUG wire:86 -  << "{"status":"success","data":{"name":"","salary":"123","age":"23","id":94}}"
+2020-02-04 08:53:56 DEBUG BasicClientConnectionManager:203 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@28c88600
+2020-02-04 08:53:56 DEBUG BasicClientConnectionManager:228 - Connection can be kept alive indefinitely
+2020-02-04 08:53:56 DEBUG cache:45 - Couldn't find template in cache for "index.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 08:53:56 DEBUG cache:45 - TemplateLoader.findTemplateSource("index_en.ftl"): Not found
+2020-02-04 08:53:56 DEBUG cache:45 - TemplateLoader.findTemplateSource("index.ftl"): Found
+2020-02-04 08:53:56 DEBUG cache:45 - Loading template for "index.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/index.ftl"
+2020-02-04 08:53:56 DEBUG cache:45 - Couldn't find template in cache for "head.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 08:53:56 DEBUG cache:45 - TemplateLoader.findTemplateSource("head_en.ftl"): Not found
+2020-02-04 08:53:56 DEBUG cache:45 - TemplateLoader.findTemplateSource("head.ftl"): Found
+2020-02-04 08:53:56 DEBUG cache:45 - Loading template for "head.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/head.ftl"
+2020-02-04 08:53:56 DEBUG cache:45 - Couldn't find template in cache for "nav.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 08:53:56 DEBUG cache:45 - TemplateLoader.findTemplateSource("nav_en.ftl"): Not found
+2020-02-04 08:53:56 DEBUG cache:45 - TemplateLoader.findTemplateSource("nav.ftl"): Found
+2020-02-04 08:53:56 DEBUG cache:45 - Loading template for "nav.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/nav.ftl"
+2020-02-04 08:53:56 DEBUG cache:45 - Couldn't find template in cache for "test-view/test-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 08:53:56 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/test-view_en.ftl"): Not found
+2020-02-04 08:53:56 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/test-view.ftl"): Found
+2020-02-04 08:53:56 DEBUG cache:45 - Loading template for "test-view/test-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view.ftl"
+2020-02-04 08:53:56 DEBUG cache:45 - Couldn't find template in cache for "test-view/test-view-charts.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 08:53:56 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/test-view-charts_en.ftl"): Not found
+2020-02-04 08:53:56 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/test-view-charts.ftl"): Found
+2020-02-04 08:53:56 DEBUG cache:45 - Loading template for "test-view/test-view-charts.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view-charts.ftl"
+2020-02-04 08:53:56 DEBUG cache:45 - Couldn't find template in cache for "test-view/standard.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 08:53:56 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/standard_en.ftl"): Not found
+2020-02-04 08:53:56 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/standard.ftl"): Found
+2020-02-04 08:53:56 DEBUG cache:45 - Loading template for "test-view/standard.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/test-view/standard.ftl"
+2020-02-04 08:53:56 DEBUG cache:45 - Couldn't find template in cache for "category-view/category-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 08:53:56 DEBUG cache:45 - TemplateLoader.findTemplateSource("category-view/category-view_en.ftl"): Not found
+2020-02-04 08:53:56 DEBUG cache:45 - TemplateLoader.findTemplateSource("category-view/category-view.ftl"): Found
+2020-02-04 08:53:56 DEBUG cache:45 - Loading template for "category-view/category-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/category-view/category-view.ftl"
+2020-02-04 08:53:56 DEBUG cache:45 - Couldn't find template in cache for "author-view/author-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 08:53:56 DEBUG cache:45 - TemplateLoader.findTemplateSource("author-view/author-view_en.ftl"): Not found
+2020-02-04 08:53:56 DEBUG cache:45 - TemplateLoader.findTemplateSource("author-view/author-view.ftl"): Found
+2020-02-04 08:53:56 DEBUG cache:45 - Loading template for "author-view/author-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/author-view/author-view.ftl"
+2020-02-04 08:53:56 DEBUG cache:45 - Couldn't find template in cache for "exception-view/exception-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 08:53:56 DEBUG cache:45 - TemplateLoader.findTemplateSource("exception-view/exception-view_en.ftl"): Not found
+2020-02-04 08:53:56 DEBUG cache:45 - TemplateLoader.findTemplateSource("exception-view/exception-view.ftl"): Found
+2020-02-04 08:53:56 DEBUG cache:45 - Loading template for "exception-view/exception-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/exception-view/exception-view.ftl"
+2020-02-04 08:53:56 DEBUG cache:45 - Couldn't find template in cache for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 08:53:56 DEBUG cache:45 - TemplateLoader.findTemplateSource("dashboard-view/dashboard-view_en.ftl"): Not found
+2020-02-04 08:53:56 DEBUG cache:45 - TemplateLoader.findTemplateSource("dashboard-view/dashboard-view.ftl"): Found
+2020-02-04 08:53:56 DEBUG cache:45 - Loading template for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/dashboard-view/dashboard-view.ftl"
+2020-02-04 08:53:56 DEBUG cache:45 - Couldn't find template in cache for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 08:53:56 DEBUG cache:45 - TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view_en.ftl"): Not found
+2020-02-04 08:53:56 DEBUG cache:45 - TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view.ftl"): Found
+2020-02-04 08:53:56 DEBUG cache:45 - Loading template for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/logs-view/testrunner-logs-view.ftl"
+2020-02-04 08:54:59 DEBUG BasicClientConnectionManager:164 - Get connection for route {}->http://dummy.restapiexample.com:80
+2020-02-04 08:55:10 DEBUG DefaultClientConnectionOperator:176 - Connecting to dummy.restapiexample.com:80
+2020-02-04 08:55:10 DEBUG RequestAddCookies:122 - CookieSpec selected: ignoreCookies
+2020-02-04 08:55:10 DEBUG RequestAuthCache:76 - Auth cache not set in the context
+2020-02-04 08:55:10 DEBUG RequestTargetAuthentication:79 - Target auth state: UNCHALLENGED
+2020-02-04 08:55:10 DEBUG RequestProxyAuthentication:88 - Proxy auth state: UNCHALLENGED
+2020-02-04 08:55:10 DEBUG DefaultHttpClient:684 - Attempt 1 to execute request
+2020-02-04 08:55:10 DEBUG DefaultClientConnection:276 - Sending request: POST /api/v1/create HTTP/1.1
+2020-02-04 08:55:10 DEBUG wire:72 -  >> "POST /api/v1/create HTTP/1.1[\r][\n]"
+2020-02-04 08:55:10 DEBUG wire:72 -  >> "Accept: */*[\r][\n]"
+2020-02-04 08:55:10 DEBUG wire:72 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2020-02-04 08:55:10 DEBUG wire:72 -  >> "Content-Length: 41[\r][\n]"
+2020-02-04 08:55:10 DEBUG wire:72 -  >> "Host: dummy.restapiexample.com[\r][\n]"
+2020-02-04 08:55:10 DEBUG wire:72 -  >> "Connection: Keep-Alive[\r][\n]"
+2020-02-04 08:55:10 DEBUG wire:72 -  >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_231)[\r][\n]"
+2020-02-04 08:55:10 DEBUG wire:72 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-02-04 08:55:10 DEBUG wire:72 -  >> "[\r][\n]"
+2020-02-04 08:55:10 DEBUG headers:280 - >> POST /api/v1/create HTTP/1.1
+2020-02-04 08:55:10 DEBUG headers:283 - >> Accept: */*
+2020-02-04 08:55:10 DEBUG headers:283 - >> Content-Type: application/json; charset=UTF-8
+2020-02-04 08:55:10 DEBUG headers:283 - >> Content-Length: 41
+2020-02-04 08:55:10 DEBUG headers:283 - >> Host: dummy.restapiexample.com
+2020-02-04 08:55:10 DEBUG headers:283 - >> Connection: Keep-Alive
+2020-02-04 08:55:10 DEBUG headers:283 - >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_231)
+2020-02-04 08:55:10 DEBUG headers:283 - >> Accept-Encoding: gzip,deflate
+2020-02-04 08:55:10 DEBUG wire:86 -  >> "{"name":"test","salary":"123","age":"23"}"
+2020-02-04 08:55:11 DEBUG wire:72 -  << "HTTP/1.1 200 OK[\r][\n]"
+2020-02-04 08:55:11 DEBUG wire:72 -  << "Accept-Ranges: bytes[\r][\n]"
+2020-02-04 08:55:11 DEBUG wire:72 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-02-04 08:55:11 DEBUG wire:72 -  << "Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client[\r][\n]"
+2020-02-04 08:55:11 DEBUG wire:72 -  << "Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==[\r][\n]"
+2020-02-04 08:55:11 DEBUG wire:72 -  << "Referrer-Policy: [\r][\n]"
+2020-02-04 08:55:11 DEBUG wire:72 -  << "Response: 200[\r][\n]"
+2020-02-04 08:55:11 DEBUG wire:72 -  << "X-Ezoic-Cdn: Miss[\r][\n]"
+2020-02-04 08:55:11 DEBUG wire:72 -  << "X-Middleton-Response: 200[\r][\n]"
+2020-02-04 08:55:11 DEBUG wire:72 -  << "X-Shard: 100225193[\r][\n]"
+2020-02-04 08:55:11 DEBUG wire:72 -  << "X-Sol: pub_site[\r][\n]"
+2020-02-04 08:55:11 DEBUG wire:72 -  << "X-Varnish: 12131419[\r][\n]"
+2020-02-04 08:55:11 DEBUG wire:72 -  << "X-Vcache: Miss[\r][\n]"
+2020-02-04 08:55:11 DEBUG wire:72 -  << "Age: 0[\r][\n]"
+2020-02-04 08:55:11 DEBUG wire:72 -  << "Cache-Control: no-store, no-cache, must-revalidate[\r][\n]"
+2020-02-04 08:55:11 DEBUG wire:72 -  << "Content-Type: application/json;charset=utf-8[\r][\n]"
+2020-02-04 08:55:11 DEBUG wire:72 -  << "Date: Tue, 04 Feb 2020 03:25:10 GMT[\r][\n]"
+2020-02-04 08:55:11 DEBUG wire:72 -  << "Expires: Thu, 19 Nov 1981 08:52:00 GMT[\r][\n]"
+2020-02-04 08:55:11 DEBUG wire:72 -  << "Pragma: no-cache[\r][\n]"
+2020-02-04 08:55:11 DEBUG wire:72 -  << "Server: nginx/1.16.0[\r][\n]"
+2020-02-04 08:55:11 DEBUG wire:72 -  << "Set-Cookie: PHPSESSID=76d7e0f67819b39dcceb358c9bab6523; path=/[\r][\n]"
+2020-02-04 08:55:11 DEBUG wire:72 -  << "Set-Cookie: ezoadgid_133674=-1; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 03:55:10 UTC[\r][\n]"
+2020-02-04 08:55:11 DEBUG wire:72 -  << "Set-Cookie: ezoref_133674=; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 05:25:10 UTC[\r][\n]"
+2020-02-04 08:55:11 DEBUG wire:72 -  << "Set-Cookie: ezoab_133674=mod7; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 05:25:10 UTC[\r][\n]"
+2020-02-04 08:55:11 DEBUG wire:72 -  << "Set-Cookie: active_template::133674=pub_site.1580786710; Path=/; Domain=restapiexample.com; Expires=Thu, 06 Feb 2020 03:25:10 UTC[\r][\n]"
+2020-02-04 08:55:11 DEBUG wire:72 -  << "Vary: Accept-Encoding,X-APP-JSON[\r][\n]"
+2020-02-04 08:55:11 DEBUG wire:72 -  << "Via: 1.1 varnish (Varnish/6.0)[\r][\n]"
+2020-02-04 08:55:11 DEBUG wire:72 -  << "Content-Length: 77[\r][\n]"
+2020-02-04 08:55:11 DEBUG wire:72 -  << "[\r][\n]"
+2020-02-04 08:55:11 DEBUG DefaultClientConnection:261 - Receiving response: HTTP/1.1 200 OK
+2020-02-04 08:55:11 DEBUG headers:264 - << HTTP/1.1 200 OK
+2020-02-04 08:55:11 DEBUG headers:267 - << Accept-Ranges: bytes
+2020-02-04 08:55:11 DEBUG headers:267 - << Access-Control-Allow-Origin: *
+2020-02-04 08:55:11 DEBUG headers:267 - << Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client
+2020-02-04 08:55:11 DEBUG headers:267 - << Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+2020-02-04 08:55:11 DEBUG headers:267 - << Referrer-Policy: 
+2020-02-04 08:55:11 DEBUG headers:267 - << Response: 200
+2020-02-04 08:55:11 DEBUG headers:267 - << X-Ezoic-Cdn: Miss
+2020-02-04 08:55:11 DEBUG headers:267 - << X-Middleton-Response: 200
+2020-02-04 08:55:11 DEBUG headers:267 - << X-Shard: 100225193
+2020-02-04 08:55:11 DEBUG headers:267 - << X-Sol: pub_site
+2020-02-04 08:55:11 DEBUG headers:267 - << X-Varnish: 12131419
+2020-02-04 08:55:11 DEBUG headers:267 - << X-Vcache: Miss
+2020-02-04 08:55:11 DEBUG headers:267 - << Age: 0
+2020-02-04 08:55:11 DEBUG headers:267 - << Cache-Control: no-store, no-cache, must-revalidate
+2020-02-04 08:55:11 DEBUG headers:267 - << Content-Type: application/json;charset=utf-8
+2020-02-04 08:55:11 DEBUG headers:267 - << Date: Tue, 04 Feb 2020 03:25:10 GMT
+2020-02-04 08:55:11 DEBUG headers:267 - << Expires: Thu, 19 Nov 1981 08:52:00 GMT
+2020-02-04 08:55:11 DEBUG headers:267 - << Pragma: no-cache
+2020-02-04 08:55:11 DEBUG headers:267 - << Server: nginx/1.16.0
+2020-02-04 08:55:11 DEBUG headers:267 - << Set-Cookie: PHPSESSID=76d7e0f67819b39dcceb358c9bab6523; path=/
+2020-02-04 08:55:11 DEBUG headers:267 - << Set-Cookie: ezoadgid_133674=-1; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 03:55:10 UTC
+2020-02-04 08:55:11 DEBUG headers:267 - << Set-Cookie: ezoref_133674=; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 05:25:10 UTC
+2020-02-04 08:55:11 DEBUG headers:267 - << Set-Cookie: ezoab_133674=mod7; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 05:25:10 UTC
+2020-02-04 08:55:11 DEBUG headers:267 - << Set-Cookie: active_template::133674=pub_site.1580786710; Path=/; Domain=restapiexample.com; Expires=Thu, 06 Feb 2020 03:25:10 UTC
+2020-02-04 08:55:11 DEBUG headers:267 - << Vary: Accept-Encoding,X-APP-JSON
+2020-02-04 08:55:11 DEBUG headers:267 - << Via: 1.1 varnish (Varnish/6.0)
+2020-02-04 08:55:11 DEBUG headers:267 - << Content-Length: 77
+2020-02-04 08:55:11 DEBUG DefaultHttpClient:511 - Connection can be kept alive indefinitely
+2020-02-04 08:55:11 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json;charset=utf-8
+2020-02-04 08:55:11 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-02-04 08:55:11 DEBUG wire:86 -  << "{"status":"success","data":{"name":"test","salary":"123","age":"23","id":45}}"
+2020-02-04 08:55:11 DEBUG BasicClientConnectionManager:203 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@486be205
+2020-02-04 08:55:11 DEBUG BasicClientConnectionManager:228 - Connection can be kept alive indefinitely
+2020-02-04 08:55:11 DEBUG BasicClientConnectionManager:164 - Get connection for route {}->http://dummy.restapiexample.com:80
+2020-02-04 08:55:11 DEBUG DefaultClientConnectionOperator:176 - Connecting to dummy.restapiexample.com:80
+2020-02-04 08:55:11 DEBUG RequestAddCookies:122 - CookieSpec selected: ignoreCookies
+2020-02-04 08:55:11 DEBUG RequestAuthCache:76 - Auth cache not set in the context
+2020-02-04 08:55:11 DEBUG RequestTargetAuthentication:79 - Target auth state: UNCHALLENGED
+2020-02-04 08:55:11 DEBUG RequestProxyAuthentication:88 - Proxy auth state: UNCHALLENGED
+2020-02-04 08:55:11 DEBUG DefaultHttpClient:684 - Attempt 1 to execute request
+2020-02-04 08:55:11 DEBUG DefaultClientConnection:276 - Sending request: POST /api/v1/create HTTP/1.1
+2020-02-04 08:55:11 DEBUG wire:72 -  >> "POST /api/v1/create HTTP/1.1[\r][\n]"
+2020-02-04 08:55:11 DEBUG wire:72 -  >> "Accept: */*[\r][\n]"
+2020-02-04 08:55:11 DEBUG wire:72 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2020-02-04 08:55:11 DEBUG wire:72 -  >> "Content-Length: 37[\r][\n]"
+2020-02-04 08:55:11 DEBUG wire:72 -  >> "Host: dummy.restapiexample.com[\r][\n]"
+2020-02-04 08:55:11 DEBUG wire:72 -  >> "Connection: Keep-Alive[\r][\n]"
+2020-02-04 08:55:11 DEBUG wire:72 -  >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_231)[\r][\n]"
+2020-02-04 08:55:11 DEBUG wire:72 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-02-04 08:55:11 DEBUG wire:72 -  >> "[\r][\n]"
+2020-02-04 08:55:11 DEBUG headers:280 - >> POST /api/v1/create HTTP/1.1
+2020-02-04 08:55:11 DEBUG headers:283 - >> Accept: */*
+2020-02-04 08:55:11 DEBUG headers:283 - >> Content-Type: application/json; charset=UTF-8
+2020-02-04 08:55:11 DEBUG headers:283 - >> Content-Length: 37
+2020-02-04 08:55:11 DEBUG headers:283 - >> Host: dummy.restapiexample.com
+2020-02-04 08:55:11 DEBUG headers:283 - >> Connection: Keep-Alive
+2020-02-04 08:55:11 DEBUG headers:283 - >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_231)
+2020-02-04 08:55:11 DEBUG headers:283 - >> Accept-Encoding: gzip,deflate
+2020-02-04 08:55:11 DEBUG wire:86 -  >> "{"name":"","salary":"123","age":"23"}"
+2020-02-04 08:55:12 DEBUG wire:72 -  << "HTTP/1.1 200 OK[\r][\n]"
+2020-02-04 08:55:12 DEBUG wire:72 -  << "Accept-Ranges: bytes[\r][\n]"
+2020-02-04 08:55:12 DEBUG wire:72 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-02-04 08:55:12 DEBUG wire:72 -  << "Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client[\r][\n]"
+2020-02-04 08:55:12 DEBUG wire:72 -  << "Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==[\r][\n]"
+2020-02-04 08:55:12 DEBUG wire:72 -  << "Referrer-Policy: [\r][\n]"
+2020-02-04 08:55:12 DEBUG wire:72 -  << "Response: 200[\r][\n]"
+2020-02-04 08:55:12 DEBUG wire:72 -  << "X-Ezoic-Cdn: Miss[\r][\n]"
+2020-02-04 08:55:12 DEBUG wire:72 -  << "X-Middleton-Response: 200[\r][\n]"
+2020-02-04 08:55:12 DEBUG wire:72 -  << "X-Shard: 100225193[\r][\n]"
+2020-02-04 08:55:12 DEBUG wire:72 -  << "X-Sol: pub_site[\r][\n]"
+2020-02-04 08:55:12 DEBUG wire:72 -  << "X-Varnish: 3783140[\r][\n]"
+2020-02-04 08:55:12 DEBUG wire:72 -  << "X-Vcache: Miss[\r][\n]"
+2020-02-04 08:55:12 DEBUG wire:72 -  << "Age: 0[\r][\n]"
+2020-02-04 08:55:12 DEBUG wire:72 -  << "Cache-Control: no-store, no-cache, must-revalidate[\r][\n]"
+2020-02-04 08:55:12 DEBUG wire:72 -  << "Content-Type: application/json;charset=utf-8[\r][\n]"
+2020-02-04 08:55:12 DEBUG wire:72 -  << "Date: Tue, 04 Feb 2020 03:25:11 GMT[\r][\n]"
+2020-02-04 08:55:12 DEBUG wire:72 -  << "Expires: Thu, 19 Nov 1981 08:52:00 GMT[\r][\n]"
+2020-02-04 08:55:12 DEBUG wire:72 -  << "Pragma: no-cache[\r][\n]"
+2020-02-04 08:55:12 DEBUG wire:72 -  << "Server: nginx/1.16.0[\r][\n]"
+2020-02-04 08:55:12 DEBUG wire:72 -  << "Set-Cookie: PHPSESSID=d5b30182aa2eb08425d447f12904b836; path=/[\r][\n]"
+2020-02-04 08:55:12 DEBUG wire:72 -  << "Set-Cookie: ezoadgid_133674=-1; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 03:55:11 UTC[\r][\n]"
+2020-02-04 08:55:12 DEBUG wire:72 -  << "Set-Cookie: ezoref_133674=; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 05:25:11 UTC[\r][\n]"
+2020-02-04 08:55:12 DEBUG wire:72 -  << "Set-Cookie: ezoab_133674=mod7; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 05:25:11 UTC[\r][\n]"
+2020-02-04 08:55:12 DEBUG wire:72 -  << "Set-Cookie: active_template::133674=pub_site.1580786711; Path=/; Domain=restapiexample.com; Expires=Thu, 06 Feb 2020 03:25:11 UTC[\r][\n]"
+2020-02-04 08:55:12 DEBUG wire:72 -  << "Vary: Accept-Encoding,X-APP-JSON[\r][\n]"
+2020-02-04 08:55:12 DEBUG wire:72 -  << "Via: 1.1 varnish (Varnish/6.0)[\r][\n]"
+2020-02-04 08:55:12 DEBUG wire:72 -  << "Content-Length: 73[\r][\n]"
+2020-02-04 08:55:12 DEBUG wire:72 -  << "[\r][\n]"
+2020-02-04 08:55:12 DEBUG DefaultClientConnection:261 - Receiving response: HTTP/1.1 200 OK
+2020-02-04 08:55:12 DEBUG headers:264 - << HTTP/1.1 200 OK
+2020-02-04 08:55:12 DEBUG headers:267 - << Accept-Ranges: bytes
+2020-02-04 08:55:12 DEBUG headers:267 - << Access-Control-Allow-Origin: *
+2020-02-04 08:55:12 DEBUG headers:267 - << Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client
+2020-02-04 08:55:12 DEBUG headers:267 - << Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+2020-02-04 08:55:12 DEBUG headers:267 - << Referrer-Policy: 
+2020-02-04 08:55:12 DEBUG headers:267 - << Response: 200
+2020-02-04 08:55:12 DEBUG headers:267 - << X-Ezoic-Cdn: Miss
+2020-02-04 08:55:12 DEBUG headers:267 - << X-Middleton-Response: 200
+2020-02-04 08:55:12 DEBUG headers:267 - << X-Shard: 100225193
+2020-02-04 08:55:12 DEBUG headers:267 - << X-Sol: pub_site
+2020-02-04 08:55:12 DEBUG headers:267 - << X-Varnish: 3783140
+2020-02-04 08:55:12 DEBUG headers:267 - << X-Vcache: Miss
+2020-02-04 08:55:12 DEBUG headers:267 - << Age: 0
+2020-02-04 08:55:12 DEBUG headers:267 - << Cache-Control: no-store, no-cache, must-revalidate
+2020-02-04 08:55:12 DEBUG headers:267 - << Content-Type: application/json;charset=utf-8
+2020-02-04 08:55:12 DEBUG headers:267 - << Date: Tue, 04 Feb 2020 03:25:11 GMT
+2020-02-04 08:55:12 DEBUG headers:267 - << Expires: Thu, 19 Nov 1981 08:52:00 GMT
+2020-02-04 08:55:12 DEBUG headers:267 - << Pragma: no-cache
+2020-02-04 08:55:12 DEBUG headers:267 - << Server: nginx/1.16.0
+2020-02-04 08:55:12 DEBUG headers:267 - << Set-Cookie: PHPSESSID=d5b30182aa2eb08425d447f12904b836; path=/
+2020-02-04 08:55:12 DEBUG headers:267 - << Set-Cookie: ezoadgid_133674=-1; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 03:55:11 UTC
+2020-02-04 08:55:12 DEBUG headers:267 - << Set-Cookie: ezoref_133674=; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 05:25:11 UTC
+2020-02-04 08:55:12 DEBUG headers:267 - << Set-Cookie: ezoab_133674=mod7; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 05:25:11 UTC
+2020-02-04 08:55:12 DEBUG headers:267 - << Set-Cookie: active_template::133674=pub_site.1580786711; Path=/; Domain=restapiexample.com; Expires=Thu, 06 Feb 2020 03:25:11 UTC
+2020-02-04 08:55:12 DEBUG headers:267 - << Vary: Accept-Encoding,X-APP-JSON
+2020-02-04 08:55:12 DEBUG headers:267 - << Via: 1.1 varnish (Varnish/6.0)
+2020-02-04 08:55:12 DEBUG headers:267 - << Content-Length: 73
+2020-02-04 08:55:12 DEBUG DefaultHttpClient:511 - Connection can be kept alive indefinitely
+2020-02-04 08:55:12 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json;charset=utf-8
+2020-02-04 08:55:12 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-02-04 08:55:12 DEBUG wire:86 -  << "{"status":"success","data":{"name":"","salary":"123","age":"23","id":30}}"
+2020-02-04 08:55:12 DEBUG BasicClientConnectionManager:203 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@5f8890c2
+2020-02-04 08:55:12 DEBUG BasicClientConnectionManager:228 - Connection can be kept alive indefinitely
+2020-02-04 08:55:12 DEBUG cache:45 - Couldn't find template in cache for "index.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 08:55:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("index_en.ftl"): Not found
+2020-02-04 08:55:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("index.ftl"): Found
+2020-02-04 08:55:12 DEBUG cache:45 - Loading template for "index.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/index.ftl"
+2020-02-04 08:55:12 DEBUG cache:45 - Couldn't find template in cache for "head.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 08:55:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("head_en.ftl"): Not found
+2020-02-04 08:55:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("head.ftl"): Found
+2020-02-04 08:55:12 DEBUG cache:45 - Loading template for "head.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/head.ftl"
+2020-02-04 08:55:12 DEBUG cache:45 - Couldn't find template in cache for "nav.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 08:55:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("nav_en.ftl"): Not found
+2020-02-04 08:55:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("nav.ftl"): Found
+2020-02-04 08:55:12 DEBUG cache:45 - Loading template for "nav.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/nav.ftl"
+2020-02-04 08:55:12 DEBUG cache:45 - Couldn't find template in cache for "test-view/test-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 08:55:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/test-view_en.ftl"): Not found
+2020-02-04 08:55:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/test-view.ftl"): Found
+2020-02-04 08:55:12 DEBUG cache:45 - Loading template for "test-view/test-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view.ftl"
+2020-02-04 08:55:12 DEBUG cache:45 - Couldn't find template in cache for "test-view/test-view-charts.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 08:55:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/test-view-charts_en.ftl"): Not found
+2020-02-04 08:55:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/test-view-charts.ftl"): Found
+2020-02-04 08:55:12 DEBUG cache:45 - Loading template for "test-view/test-view-charts.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view-charts.ftl"
+2020-02-04 08:55:12 DEBUG cache:45 - Couldn't find template in cache for "test-view/standard.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 08:55:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/standard_en.ftl"): Not found
+2020-02-04 08:55:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/standard.ftl"): Found
+2020-02-04 08:55:12 DEBUG cache:45 - Loading template for "test-view/standard.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/test-view/standard.ftl"
+2020-02-04 08:55:13 DEBUG cache:45 - Couldn't find template in cache for "category-view/category-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 08:55:13 DEBUG cache:45 - TemplateLoader.findTemplateSource("category-view/category-view_en.ftl"): Not found
+2020-02-04 08:55:13 DEBUG cache:45 - TemplateLoader.findTemplateSource("category-view/category-view.ftl"): Found
+2020-02-04 08:55:13 DEBUG cache:45 - Loading template for "category-view/category-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/category-view/category-view.ftl"
+2020-02-04 08:55:13 DEBUG cache:45 - Couldn't find template in cache for "author-view/author-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 08:55:13 DEBUG cache:45 - TemplateLoader.findTemplateSource("author-view/author-view_en.ftl"): Not found
+2020-02-04 08:55:13 DEBUG cache:45 - TemplateLoader.findTemplateSource("author-view/author-view.ftl"): Found
+2020-02-04 08:55:13 DEBUG cache:45 - Loading template for "author-view/author-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/author-view/author-view.ftl"
+2020-02-04 08:55:13 DEBUG cache:45 - Couldn't find template in cache for "exception-view/exception-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 08:55:13 DEBUG cache:45 - TemplateLoader.findTemplateSource("exception-view/exception-view_en.ftl"): Not found
+2020-02-04 08:55:13 DEBUG cache:45 - TemplateLoader.findTemplateSource("exception-view/exception-view.ftl"): Found
+2020-02-04 08:55:13 DEBUG cache:45 - Loading template for "exception-view/exception-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/exception-view/exception-view.ftl"
+2020-02-04 08:55:13 DEBUG cache:45 - Couldn't find template in cache for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 08:55:13 DEBUG cache:45 - TemplateLoader.findTemplateSource("dashboard-view/dashboard-view_en.ftl"): Not found
+2020-02-04 08:55:13 DEBUG cache:45 - TemplateLoader.findTemplateSource("dashboard-view/dashboard-view.ftl"): Found
+2020-02-04 08:55:13 DEBUG cache:45 - Loading template for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/dashboard-view/dashboard-view.ftl"
+2020-02-04 08:55:13 DEBUG cache:45 - Couldn't find template in cache for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 08:55:13 DEBUG cache:45 - TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view_en.ftl"): Not found
+2020-02-04 08:55:13 DEBUG cache:45 - TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view.ftl"): Found
+2020-02-04 08:55:13 DEBUG cache:45 - Loading template for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/logs-view/testrunner-logs-view.ftl"
+2020-02-04 10:26:11 DEBUG cache:45 - Couldn't find template in cache for "index.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 10:26:11 DEBUG cache:45 - TemplateLoader.findTemplateSource("index_en.ftl"): Not found
+2020-02-04 10:26:11 DEBUG cache:45 - TemplateLoader.findTemplateSource("index.ftl"): Found
+2020-02-04 10:26:11 DEBUG cache:45 - Loading template for "index.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/index.ftl"
+2020-02-04 10:26:12 DEBUG cache:45 - Couldn't find template in cache for "head.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 10:26:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("head_en.ftl"): Not found
+2020-02-04 10:26:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("head.ftl"): Found
+2020-02-04 10:26:12 DEBUG cache:45 - Loading template for "head.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/head.ftl"
+2020-02-04 10:26:12 DEBUG cache:45 - Couldn't find template in cache for "nav.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 10:26:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("nav_en.ftl"): Not found
+2020-02-04 10:26:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("nav.ftl"): Found
+2020-02-04 10:26:12 DEBUG cache:45 - Loading template for "nav.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/nav.ftl"
+2020-02-04 10:26:12 DEBUG cache:45 - Couldn't find template in cache for "test-view/test-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 10:26:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/test-view_en.ftl"): Not found
+2020-02-04 10:26:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/test-view.ftl"): Found
+2020-02-04 10:26:12 DEBUG cache:45 - Loading template for "test-view/test-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view.ftl"
+2020-02-04 10:26:12 DEBUG cache:45 - Couldn't find template in cache for "test-view/test-view-charts.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 10:26:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/test-view-charts_en.ftl"): Not found
+2020-02-04 10:26:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/test-view-charts.ftl"): Found
+2020-02-04 10:26:12 DEBUG cache:45 - Loading template for "test-view/test-view-charts.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view-charts.ftl"
+2020-02-04 10:26:12 DEBUG cache:45 - Couldn't find template in cache for "test-view/standard.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 10:26:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/standard_en.ftl"): Not found
+2020-02-04 10:26:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/standard.ftl"): Found
+2020-02-04 10:26:12 DEBUG cache:45 - Loading template for "test-view/standard.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/test-view/standard.ftl"
+2020-02-04 10:26:12 DEBUG cache:45 - Couldn't find template in cache for "category-view/category-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 10:26:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("category-view/category-view_en.ftl"): Not found
+2020-02-04 10:26:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("category-view/category-view.ftl"): Found
+2020-02-04 10:26:12 DEBUG cache:45 - Loading template for "category-view/category-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/category-view/category-view.ftl"
+2020-02-04 10:26:12 DEBUG cache:45 - Couldn't find template in cache for "author-view/author-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 10:26:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("author-view/author-view_en.ftl"): Not found
+2020-02-04 10:26:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("author-view/author-view.ftl"): Found
+2020-02-04 10:26:12 DEBUG cache:45 - Loading template for "author-view/author-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/author-view/author-view.ftl"
+2020-02-04 10:26:12 DEBUG cache:45 - Couldn't find template in cache for "exception-view/exception-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 10:26:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("exception-view/exception-view_en.ftl"): Not found
+2020-02-04 10:26:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("exception-view/exception-view.ftl"): Found
+2020-02-04 10:26:12 DEBUG cache:45 - Loading template for "exception-view/exception-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/exception-view/exception-view.ftl"
+2020-02-04 10:26:12 DEBUG cache:45 - Couldn't find template in cache for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 10:26:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("dashboard-view/dashboard-view_en.ftl"): Not found
+2020-02-04 10:26:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("dashboard-view/dashboard-view.ftl"): Found
+2020-02-04 10:26:12 DEBUG cache:45 - Loading template for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/dashboard-view/dashboard-view.ftl"
+2020-02-04 10:26:12 DEBUG cache:45 - Couldn't find template in cache for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 10:26:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view_en.ftl"): Not found
+2020-02-04 10:26:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view.ftl"): Found
+2020-02-04 10:26:12 DEBUG cache:45 - Loading template for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/logs-view/testrunner-logs-view.ftl"
+2020-02-04 10:27:06 DEBUG BasicClientConnectionManager:164 - Get connection for route {}->http://dummy.restapiexample.com:80
+2020-02-04 10:27:17 DEBUG DefaultClientConnectionOperator:176 - Connecting to dummy.restapiexample.com:80
+2020-02-04 10:27:17 DEBUG RequestAddCookies:122 - CookieSpec selected: ignoreCookies
+2020-02-04 10:27:17 DEBUG RequestAuthCache:76 - Auth cache not set in the context
+2020-02-04 10:27:17 DEBUG RequestTargetAuthentication:79 - Target auth state: UNCHALLENGED
+2020-02-04 10:27:17 DEBUG RequestProxyAuthentication:88 - Proxy auth state: UNCHALLENGED
+2020-02-04 10:27:17 DEBUG DefaultHttpClient:684 - Attempt 1 to execute request
+2020-02-04 10:27:17 DEBUG DefaultClientConnection:276 - Sending request: POST /api/v1/create HTTP/1.1
+2020-02-04 10:27:17 DEBUG wire:72 -  >> "POST /api/v1/create HTTP/1.1[\r][\n]"
+2020-02-04 10:27:17 DEBUG wire:72 -  >> "Accept: */*[\r][\n]"
+2020-02-04 10:27:17 DEBUG wire:72 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2020-02-04 10:27:17 DEBUG wire:72 -  >> "Content-Length: 41[\r][\n]"
+2020-02-04 10:27:17 DEBUG wire:72 -  >> "Host: dummy.restapiexample.com[\r][\n]"
+2020-02-04 10:27:17 DEBUG wire:72 -  >> "Connection: Keep-Alive[\r][\n]"
+2020-02-04 10:27:17 DEBUG wire:72 -  >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_231)[\r][\n]"
+2020-02-04 10:27:17 DEBUG wire:72 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-02-04 10:27:17 DEBUG wire:72 -  >> "[\r][\n]"
+2020-02-04 10:27:17 DEBUG headers:280 - >> POST /api/v1/create HTTP/1.1
+2020-02-04 10:27:17 DEBUG headers:283 - >> Accept: */*
+2020-02-04 10:27:17 DEBUG headers:283 - >> Content-Type: application/json; charset=UTF-8
+2020-02-04 10:27:17 DEBUG headers:283 - >> Content-Length: 41
+2020-02-04 10:27:17 DEBUG headers:283 - >> Host: dummy.restapiexample.com
+2020-02-04 10:27:17 DEBUG headers:283 - >> Connection: Keep-Alive
+2020-02-04 10:27:17 DEBUG headers:283 - >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_231)
+2020-02-04 10:27:17 DEBUG headers:283 - >> Accept-Encoding: gzip,deflate
+2020-02-04 10:27:17 DEBUG wire:86 -  >> "{"name":"test","salary":"123","age":"23"}"
+2020-02-04 10:27:18 DEBUG wire:72 -  << "HTTP/1.1 200 OK[\r][\n]"
+2020-02-04 10:27:18 DEBUG wire:72 -  << "Accept-Ranges: bytes[\r][\n]"
+2020-02-04 10:27:18 DEBUG wire:72 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-02-04 10:27:18 DEBUG wire:72 -  << "Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client[\r][\n]"
+2020-02-04 10:27:18 DEBUG wire:72 -  << "Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==[\r][\n]"
+2020-02-04 10:27:18 DEBUG wire:72 -  << "Referrer-Policy: [\r][\n]"
+2020-02-04 10:27:18 DEBUG wire:72 -  << "Response: 200[\r][\n]"
+2020-02-04 10:27:18 DEBUG wire:72 -  << "X-Ezoic-Cdn: Miss[\r][\n]"
+2020-02-04 10:27:18 DEBUG wire:72 -  << "X-Middleton-Response: 200[\r][\n]"
+2020-02-04 10:27:18 DEBUG wire:72 -  << "X-Shard: 100225193[\r][\n]"
+2020-02-04 10:27:18 DEBUG wire:72 -  << "X-Sol: pub_site[\r][\n]"
+2020-02-04 10:27:18 DEBUG wire:72 -  << "X-Varnish: 20459687[\r][\n]"
+2020-02-04 10:27:18 DEBUG wire:72 -  << "X-Vcache: Miss[\r][\n]"
+2020-02-04 10:27:18 DEBUG wire:72 -  << "Age: 0[\r][\n]"
+2020-02-04 10:27:18 DEBUG wire:72 -  << "Cache-Control: no-store, no-cache, must-revalidate[\r][\n]"
+2020-02-04 10:27:18 DEBUG wire:72 -  << "Content-Type: application/json;charset=utf-8[\r][\n]"
+2020-02-04 10:27:18 DEBUG wire:72 -  << "Date: Tue, 04 Feb 2020 04:57:17 GMT[\r][\n]"
+2020-02-04 10:27:18 DEBUG wire:72 -  << "Expires: Thu, 19 Nov 1981 08:52:00 GMT[\r][\n]"
+2020-02-04 10:27:18 DEBUG wire:72 -  << "Pragma: no-cache[\r][\n]"
+2020-02-04 10:27:18 DEBUG wire:72 -  << "Server: nginx/1.16.0[\r][\n]"
+2020-02-04 10:27:18 DEBUG wire:72 -  << "Set-Cookie: PHPSESSID=af1f7da190e28c02cb563707b7af33ca; path=/[\r][\n]"
+2020-02-04 10:27:18 DEBUG wire:72 -  << "Set-Cookie: ezoadgid_133674=-1; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 05:27:17 UTC[\r][\n]"
+2020-02-04 10:27:18 DEBUG wire:72 -  << "Set-Cookie: ezoref_133674=; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 06:57:17 UTC[\r][\n]"
+2020-02-04 10:27:18 DEBUG wire:72 -  << "Set-Cookie: ezoab_133674=mod59; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 06:57:17 UTC[\r][\n]"
+2020-02-04 10:27:18 DEBUG wire:72 -  << "Set-Cookie: active_template::133674=pub_site.1580792237; Path=/; Domain=restapiexample.com; Expires=Thu, 06 Feb 2020 04:57:17 UTC[\r][\n]"
+2020-02-04 10:27:18 DEBUG wire:72 -  << "Vary: Accept-Encoding,X-APP-JSON[\r][\n]"
+2020-02-04 10:27:18 DEBUG wire:72 -  << "Via: 1.1 varnish (Varnish/6.0)[\r][\n]"
+2020-02-04 10:27:18 DEBUG wire:72 -  << "Content-Length: 77[\r][\n]"
+2020-02-04 10:27:18 DEBUG wire:72 -  << "[\r][\n]"
+2020-02-04 10:27:18 DEBUG DefaultClientConnection:261 - Receiving response: HTTP/1.1 200 OK
+2020-02-04 10:27:18 DEBUG headers:264 - << HTTP/1.1 200 OK
+2020-02-04 10:27:18 DEBUG headers:267 - << Accept-Ranges: bytes
+2020-02-04 10:27:18 DEBUG headers:267 - << Access-Control-Allow-Origin: *
+2020-02-04 10:27:18 DEBUG headers:267 - << Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client
+2020-02-04 10:27:18 DEBUG headers:267 - << Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+2020-02-04 10:27:18 DEBUG headers:267 - << Referrer-Policy: 
+2020-02-04 10:27:18 DEBUG headers:267 - << Response: 200
+2020-02-04 10:27:18 DEBUG headers:267 - << X-Ezoic-Cdn: Miss
+2020-02-04 10:27:18 DEBUG headers:267 - << X-Middleton-Response: 200
+2020-02-04 10:27:18 DEBUG headers:267 - << X-Shard: 100225193
+2020-02-04 10:27:18 DEBUG headers:267 - << X-Sol: pub_site
+2020-02-04 10:27:18 DEBUG headers:267 - << X-Varnish: 20459687
+2020-02-04 10:27:18 DEBUG headers:267 - << X-Vcache: Miss
+2020-02-04 10:27:18 DEBUG headers:267 - << Age: 0
+2020-02-04 10:27:18 DEBUG headers:267 - << Cache-Control: no-store, no-cache, must-revalidate
+2020-02-04 10:27:18 DEBUG headers:267 - << Content-Type: application/json;charset=utf-8
+2020-02-04 10:27:18 DEBUG headers:267 - << Date: Tue, 04 Feb 2020 04:57:17 GMT
+2020-02-04 10:27:18 DEBUG headers:267 - << Expires: Thu, 19 Nov 1981 08:52:00 GMT
+2020-02-04 10:27:18 DEBUG headers:267 - << Pragma: no-cache
+2020-02-04 10:27:18 DEBUG headers:267 - << Server: nginx/1.16.0
+2020-02-04 10:27:18 DEBUG headers:267 - << Set-Cookie: PHPSESSID=af1f7da190e28c02cb563707b7af33ca; path=/
+2020-02-04 10:27:18 DEBUG headers:267 - << Set-Cookie: ezoadgid_133674=-1; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 05:27:17 UTC
+2020-02-04 10:27:18 DEBUG headers:267 - << Set-Cookie: ezoref_133674=; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 06:57:17 UTC
+2020-02-04 10:27:18 DEBUG headers:267 - << Set-Cookie: ezoab_133674=mod59; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 06:57:17 UTC
+2020-02-04 10:27:18 DEBUG headers:267 - << Set-Cookie: active_template::133674=pub_site.1580792237; Path=/; Domain=restapiexample.com; Expires=Thu, 06 Feb 2020 04:57:17 UTC
+2020-02-04 10:27:18 DEBUG headers:267 - << Vary: Accept-Encoding,X-APP-JSON
+2020-02-04 10:27:18 DEBUG headers:267 - << Via: 1.1 varnish (Varnish/6.0)
+2020-02-04 10:27:18 DEBUG headers:267 - << Content-Length: 77
+2020-02-04 10:27:18 DEBUG DefaultHttpClient:511 - Connection can be kept alive indefinitely
+2020-02-04 10:27:18 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json;charset=utf-8
+2020-02-04 10:27:18 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-02-04 10:27:18 DEBUG wire:86 -  << "{"status":"success","data":{"name":"test","salary":"123","age":"23","id":47}}"
+2020-02-04 10:27:18 DEBUG BasicClientConnectionManager:203 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@486be205
+2020-02-04 10:27:18 DEBUG BasicClientConnectionManager:228 - Connection can be kept alive indefinitely
+2020-02-04 10:27:18 DEBUG BasicClientConnectionManager:164 - Get connection for route {}->http://dummy.restapiexample.com:80
+2020-02-04 10:27:18 DEBUG DefaultClientConnectionOperator:176 - Connecting to dummy.restapiexample.com:80
+2020-02-04 10:27:18 DEBUG RequestAddCookies:122 - CookieSpec selected: ignoreCookies
+2020-02-04 10:27:18 DEBUG RequestAuthCache:76 - Auth cache not set in the context
+2020-02-04 10:27:18 DEBUG RequestTargetAuthentication:79 - Target auth state: UNCHALLENGED
+2020-02-04 10:27:18 DEBUG RequestProxyAuthentication:88 - Proxy auth state: UNCHALLENGED
+2020-02-04 10:27:18 DEBUG DefaultHttpClient:684 - Attempt 1 to execute request
+2020-02-04 10:27:18 DEBUG DefaultClientConnection:276 - Sending request: POST /api/v1/create HTTP/1.1
+2020-02-04 10:27:18 DEBUG wire:72 -  >> "POST /api/v1/create HTTP/1.1[\r][\n]"
+2020-02-04 10:27:18 DEBUG wire:72 -  >> "Accept: */*[\r][\n]"
+2020-02-04 10:27:18 DEBUG wire:72 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2020-02-04 10:27:18 DEBUG wire:72 -  >> "Content-Length: 37[\r][\n]"
+2020-02-04 10:27:18 DEBUG wire:72 -  >> "Host: dummy.restapiexample.com[\r][\n]"
+2020-02-04 10:27:18 DEBUG wire:72 -  >> "Connection: Keep-Alive[\r][\n]"
+2020-02-04 10:27:18 DEBUG wire:72 -  >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_231)[\r][\n]"
+2020-02-04 10:27:18 DEBUG wire:72 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-02-04 10:27:18 DEBUG wire:72 -  >> "[\r][\n]"
+2020-02-04 10:27:18 DEBUG headers:280 - >> POST /api/v1/create HTTP/1.1
+2020-02-04 10:27:18 DEBUG headers:283 - >> Accept: */*
+2020-02-04 10:27:18 DEBUG headers:283 - >> Content-Type: application/json; charset=UTF-8
+2020-02-04 10:27:18 DEBUG headers:283 - >> Content-Length: 37
+2020-02-04 10:27:18 DEBUG headers:283 - >> Host: dummy.restapiexample.com
+2020-02-04 10:27:18 DEBUG headers:283 - >> Connection: Keep-Alive
+2020-02-04 10:27:18 DEBUG headers:283 - >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_231)
+2020-02-04 10:27:18 DEBUG headers:283 - >> Accept-Encoding: gzip,deflate
+2020-02-04 10:27:18 DEBUG wire:86 -  >> "{"name":"","salary":"123","age":"23"}"
+2020-02-04 10:27:19 DEBUG wire:72 -  << "HTTP/1.1 200 OK[\r][\n]"
+2020-02-04 10:27:19 DEBUG wire:72 -  << "Accept-Ranges: bytes[\r][\n]"
+2020-02-04 10:27:19 DEBUG wire:72 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-02-04 10:27:19 DEBUG wire:72 -  << "Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client[\r][\n]"
+2020-02-04 10:27:19 DEBUG wire:72 -  << "Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==[\r][\n]"
+2020-02-04 10:27:19 DEBUG wire:72 -  << "Referrer-Policy: [\r][\n]"
+2020-02-04 10:27:19 DEBUG wire:72 -  << "Response: 200[\r][\n]"
+2020-02-04 10:27:19 DEBUG wire:72 -  << "X-Ezoic-Cdn: Miss[\r][\n]"
+2020-02-04 10:27:19 DEBUG wire:72 -  << "X-Middleton-Response: 200[\r][\n]"
+2020-02-04 10:27:19 DEBUG wire:72 -  << "X-Shard: 100225193[\r][\n]"
+2020-02-04 10:27:19 DEBUG wire:72 -  << "X-Sol: pub_site[\r][\n]"
+2020-02-04 10:27:19 DEBUG wire:72 -  << "X-Varnish: 15290702[\r][\n]"
+2020-02-04 10:27:19 DEBUG wire:72 -  << "X-Vcache: Miss[\r][\n]"
+2020-02-04 10:27:19 DEBUG wire:72 -  << "Age: 0[\r][\n]"
+2020-02-04 10:27:19 DEBUG wire:72 -  << "Cache-Control: no-store, no-cache, must-revalidate[\r][\n]"
+2020-02-04 10:27:19 DEBUG wire:72 -  << "Content-Type: application/json;charset=utf-8[\r][\n]"
+2020-02-04 10:27:19 DEBUG wire:72 -  << "Date: Tue, 04 Feb 2020 04:57:19 GMT[\r][\n]"
+2020-02-04 10:27:19 DEBUG wire:72 -  << "Expires: Thu, 19 Nov 1981 08:52:00 GMT[\r][\n]"
+2020-02-04 10:27:19 DEBUG wire:72 -  << "Pragma: no-cache[\r][\n]"
+2020-02-04 10:27:19 DEBUG wire:72 -  << "Server: nginx/1.16.0[\r][\n]"
+2020-02-04 10:27:19 DEBUG wire:72 -  << "Set-Cookie: PHPSESSID=a5132b1ddc5ba83aa6850e8059fbfa27; path=/[\r][\n]"
+2020-02-04 10:27:19 DEBUG wire:72 -  << "Set-Cookie: ezoadgid_133674=-1; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 05:27:18 UTC[\r][\n]"
+2020-02-04 10:27:19 DEBUG wire:72 -  << "Set-Cookie: ezoref_133674=; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 06:57:18 UTC[\r][\n]"
+2020-02-04 10:27:19 DEBUG wire:72 -  << "Set-Cookie: ezoab_133674=mod88; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 06:57:18 UTC[\r][\n]"
+2020-02-04 10:27:19 DEBUG wire:72 -  << "Set-Cookie: active_template::133674=pub_site.1580792238; Path=/; Domain=restapiexample.com; Expires=Thu, 06 Feb 2020 04:57:18 UTC[\r][\n]"
+2020-02-04 10:27:19 DEBUG wire:72 -  << "Vary: Accept-Encoding,X-APP-JSON[\r][\n]"
+2020-02-04 10:27:19 DEBUG wire:72 -  << "Via: 1.1 varnish (Varnish/6.0)[\r][\n]"
+2020-02-04 10:27:19 DEBUG wire:72 -  << "Content-Length: 73[\r][\n]"
+2020-02-04 10:27:19 DEBUG wire:72 -  << "[\r][\n]"
+2020-02-04 10:27:19 DEBUG DefaultClientConnection:261 - Receiving response: HTTP/1.1 200 OK
+2020-02-04 10:27:19 DEBUG headers:264 - << HTTP/1.1 200 OK
+2020-02-04 10:27:19 DEBUG headers:267 - << Accept-Ranges: bytes
+2020-02-04 10:27:19 DEBUG headers:267 - << Access-Control-Allow-Origin: *
+2020-02-04 10:27:19 DEBUG headers:267 - << Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client
+2020-02-04 10:27:19 DEBUG headers:267 - << Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+2020-02-04 10:27:19 DEBUG headers:267 - << Referrer-Policy: 
+2020-02-04 10:27:19 DEBUG headers:267 - << Response: 200
+2020-02-04 10:27:19 DEBUG headers:267 - << X-Ezoic-Cdn: Miss
+2020-02-04 10:27:19 DEBUG headers:267 - << X-Middleton-Response: 200
+2020-02-04 10:27:19 DEBUG headers:267 - << X-Shard: 100225193
+2020-02-04 10:27:19 DEBUG headers:267 - << X-Sol: pub_site
+2020-02-04 10:27:19 DEBUG headers:267 - << X-Varnish: 15290702
+2020-02-04 10:27:19 DEBUG headers:267 - << X-Vcache: Miss
+2020-02-04 10:27:19 DEBUG headers:267 - << Age: 0
+2020-02-04 10:27:19 DEBUG headers:267 - << Cache-Control: no-store, no-cache, must-revalidate
+2020-02-04 10:27:19 DEBUG headers:267 - << Content-Type: application/json;charset=utf-8
+2020-02-04 10:27:19 DEBUG headers:267 - << Date: Tue, 04 Feb 2020 04:57:19 GMT
+2020-02-04 10:27:19 DEBUG headers:267 - << Expires: Thu, 19 Nov 1981 08:52:00 GMT
+2020-02-04 10:27:19 DEBUG headers:267 - << Pragma: no-cache
+2020-02-04 10:27:19 DEBUG headers:267 - << Server: nginx/1.16.0
+2020-02-04 10:27:19 DEBUG headers:267 - << Set-Cookie: PHPSESSID=a5132b1ddc5ba83aa6850e8059fbfa27; path=/
+2020-02-04 10:27:19 DEBUG headers:267 - << Set-Cookie: ezoadgid_133674=-1; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 05:27:18 UTC
+2020-02-04 10:27:19 DEBUG headers:267 - << Set-Cookie: ezoref_133674=; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 06:57:18 UTC
+2020-02-04 10:27:19 DEBUG headers:267 - << Set-Cookie: ezoab_133674=mod88; Path=/; Domain=restapiexample.com; Expires=Tue, 04 Feb 2020 06:57:18 UTC
+2020-02-04 10:27:19 DEBUG headers:267 - << Set-Cookie: active_template::133674=pub_site.1580792238; Path=/; Domain=restapiexample.com; Expires=Thu, 06 Feb 2020 04:57:18 UTC
+2020-02-04 10:27:19 DEBUG headers:267 - << Vary: Accept-Encoding,X-APP-JSON
+2020-02-04 10:27:19 DEBUG headers:267 - << Via: 1.1 varnish (Varnish/6.0)
+2020-02-04 10:27:19 DEBUG headers:267 - << Content-Length: 73
+2020-02-04 10:27:19 DEBUG DefaultHttpClient:511 - Connection can be kept alive indefinitely
+2020-02-04 10:27:19 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json;charset=utf-8
+2020-02-04 10:27:19 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-02-04 10:27:19 DEBUG wire:86 -  << "{"status":"success","data":{"name":"","salary":"123","age":"23","id":37}}"
+2020-02-04 10:27:19 DEBUG BasicClientConnectionManager:203 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@5f8890c2
+2020-02-04 10:27:19 DEBUG BasicClientConnectionManager:228 - Connection can be kept alive indefinitely
+2020-02-04 10:27:19 DEBUG cache:45 - Couldn't find template in cache for "index.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 10:27:19 DEBUG cache:45 - TemplateLoader.findTemplateSource("index_en.ftl"): Not found
+2020-02-04 10:27:19 DEBUG cache:45 - TemplateLoader.findTemplateSource("index.ftl"): Found
+2020-02-04 10:27:19 DEBUG cache:45 - Loading template for "index.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/index.ftl"
+2020-02-04 10:27:19 DEBUG cache:45 - Couldn't find template in cache for "head.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 10:27:19 DEBUG cache:45 - TemplateLoader.findTemplateSource("head_en.ftl"): Not found
+2020-02-04 10:27:19 DEBUG cache:45 - TemplateLoader.findTemplateSource("head.ftl"): Found
+2020-02-04 10:27:19 DEBUG cache:45 - Loading template for "head.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/head.ftl"
+2020-02-04 10:27:19 DEBUG cache:45 - Couldn't find template in cache for "nav.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 10:27:19 DEBUG cache:45 - TemplateLoader.findTemplateSource("nav_en.ftl"): Not found
+2020-02-04 10:27:19 DEBUG cache:45 - TemplateLoader.findTemplateSource("nav.ftl"): Found
+2020-02-04 10:27:19 DEBUG cache:45 - Loading template for "nav.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/nav.ftl"
+2020-02-04 10:27:19 DEBUG cache:45 - Couldn't find template in cache for "test-view/test-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 10:27:19 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/test-view_en.ftl"): Not found
+2020-02-04 10:27:19 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/test-view.ftl"): Found
+2020-02-04 10:27:19 DEBUG cache:45 - Loading template for "test-view/test-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view.ftl"
+2020-02-04 10:27:19 DEBUG cache:45 - Couldn't find template in cache for "test-view/test-view-charts.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 10:27:19 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/test-view-charts_en.ftl"): Not found
+2020-02-04 10:27:19 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/test-view-charts.ftl"): Found
+2020-02-04 10:27:19 DEBUG cache:45 - Loading template for "test-view/test-view-charts.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view-charts.ftl"
+2020-02-04 10:27:19 DEBUG cache:45 - Couldn't find template in cache for "test-view/standard.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 10:27:19 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/standard_en.ftl"): Not found
+2020-02-04 10:27:19 DEBUG cache:45 - TemplateLoader.findTemplateSource("test-view/standard.ftl"): Found
+2020-02-04 10:27:19 DEBUG cache:45 - Loading template for "test-view/standard.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/test-view/standard.ftl"
+2020-02-04 10:27:19 DEBUG cache:45 - Couldn't find template in cache for "category-view/category-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 10:27:19 DEBUG cache:45 - TemplateLoader.findTemplateSource("category-view/category-view_en.ftl"): Not found
+2020-02-04 10:27:19 DEBUG cache:45 - TemplateLoader.findTemplateSource("category-view/category-view.ftl"): Found
+2020-02-04 10:27:19 DEBUG cache:45 - Loading template for "category-view/category-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/category-view/category-view.ftl"
+2020-02-04 10:27:19 DEBUG cache:45 - Couldn't find template in cache for "author-view/author-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 10:27:19 DEBUG cache:45 - TemplateLoader.findTemplateSource("author-view/author-view_en.ftl"): Not found
+2020-02-04 10:27:19 DEBUG cache:45 - TemplateLoader.findTemplateSource("author-view/author-view.ftl"): Found
+2020-02-04 10:27:19 DEBUG cache:45 - Loading template for "author-view/author-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/author-view/author-view.ftl"
+2020-02-04 10:27:19 DEBUG cache:45 - Couldn't find template in cache for "exception-view/exception-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 10:27:19 DEBUG cache:45 - TemplateLoader.findTemplateSource("exception-view/exception-view_en.ftl"): Not found
+2020-02-04 10:27:19 DEBUG cache:45 - TemplateLoader.findTemplateSource("exception-view/exception-view.ftl"): Found
+2020-02-04 10:27:19 DEBUG cache:45 - Loading template for "exception-view/exception-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/exception-view/exception-view.ftl"
+2020-02-04 10:27:19 DEBUG cache:45 - Couldn't find template in cache for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 10:27:19 DEBUG cache:45 - TemplateLoader.findTemplateSource("dashboard-view/dashboard-view_en.ftl"): Not found
+2020-02-04 10:27:19 DEBUG cache:45 - TemplateLoader.findTemplateSource("dashboard-view/dashboard-view.ftl"): Found
+2020-02-04 10:27:19 DEBUG cache:45 - Loading template for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/dashboard-view/dashboard-view.ftl"
+2020-02-04 10:27:20 DEBUG cache:45 - Couldn't find template in cache for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-04 10:27:20 DEBUG cache:45 - TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view_en.ftl"): Not found
+2020-02-04 10:27:20 DEBUG cache:45 - TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view.ftl"): Found
+2020-02-04 10:27:20 DEBUG cache:45 - Loading template for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Govindaraj/.m2/repository/com/aventstack/extentreports/3.1.3/extentreports-3.1.3.jar!/com/aventstack/extentreports/view/html-report/logs-view/testrunner-logs-view.ftl"

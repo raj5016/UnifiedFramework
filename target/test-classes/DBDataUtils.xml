@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	
+	
+	<!--set environment in local machine(C:\Windows\System32\drivers\etc)-->
+	<!-- update port forwarding in oracle vm box
+	 Setting-Newtorks-advanced-Adaptor2-portForwarding-add host,port,guestport -->
+	 
+	<entry key="MongoDatabaseServer">192.168.56.101</entry>
+	<entry key="MongoDatabasePort">27017</entry>
+	<entry key="MongoDatabaseName">payment</entry>
+	<entry key="MongoCollectionName">pg_transactions</entry>
+	
+	<entry key="MYSQLDatabaseServer">192.168.56.101</entry>
+	<entry key="MYSQLDatabasePort">3306</entry>
+	<entry key="MYSQLDatabaseName">emulator</entry>
+	<entry key="MYSQLDatabaseUserID">commonuser</entry>
+	<entry key="MYSQLDatabaseUserPwd">Global!23</entry>
+	
+</properties>

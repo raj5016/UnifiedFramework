@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.auz.selenium.ui.candidate.testcases.AddCandidate">
+        <methods>
+          <include name="TC001_verify_user_is_able_to_add_candidate_successfully_without_mapping_job"/>
+          <include name="afterMethod"/>
+          <include name="afterSuite"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+          <include name="setValues"/>
+        </methods>
+      </class> <!-- com.auz.selenium.ui.candidate.testcases.AddCandidate -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

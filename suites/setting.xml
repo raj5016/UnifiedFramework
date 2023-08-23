@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.auz.selenium.ui.setting.testcases.EmailTemplate"/>
+      <class name="com.auz.selenium.ui.setting.testcases.JobTemplate"/>
+      <class name="com.auz.selenium.ui.setting.testcases.CustomFields"/>
+      <class name="com.auz.selenium.ui.setting.testcases.CareersPageTest"/>
+      <class name="com.auz.selenium.ui.setting.testcases.RecruitingPreferences"/>
+      <class name="com.auz.selenium.ui.setting.testcases.CompanySetting"/>
+      <class name="com.auz.selenium.ui.setting.testcases.TeamMember"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

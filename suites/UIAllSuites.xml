@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ATS-AutomationSuite">
+	<test name="Add job,candidate,Reports">
+		<packages>
+			<package name="com.auz.selenium.ui.candidate.testcases" />
+			<package name="com.auz.selenium.ui.home.testcases" />
+			 <package name="com.auz.selenium.ui.job.testcases" /> 
+			 <package name="com.auz.selenium.ui.jobmangedbyme.testcases" />
+			<package name="com.auz.selenium.ui.reports.testcases" />
+			<package name="com.auz.selenium.ui.setting.testcases" />
+			<package name="com.auz.selenium.ui.talentpool.testcases" />
+			<package name="com.auz.selenium.ui.manage.testcases" />
+		</packages>
+	</test>
+</suite> 
